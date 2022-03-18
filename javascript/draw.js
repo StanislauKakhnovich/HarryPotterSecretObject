@@ -3,27 +3,34 @@ let body = document.body;
   let drawFirstScene = () => {
     let ctxGround = document.getElementById('layer-ground').getContext('2d');
     let ctxHarry = document.getElementById('layer-harry').getContext('2d');
-    /*
     let lingrad = ctxGround.createLinearGradient(0,0,0,150);
     lingrad.addColorStop(0, '#00ABEB');
     lingrad.addColorStop(1, '#fff');
     ctxGround.fillStyle = lingrad;
     ctxGround.fillRect(0,0,600,200);
-    */
-    let imgSky = new Image();
-    imgSky.src = 'image/sky_1.jpg';
-    imgSky.onload = function(){
-      ctxGround.drawImage(imgSky, 0, 0);
-    }
-    
-   
-      let imgGround = new Image();
-    imgGround.src = 'image/ground_y_1.jpg';
-    imgGround.onload = function(){
-      let ptrn = ctxGround.createPattern(imgGround,'repeat');
+    let imgGround_1 = new Image();
+    imgGround_1.src = 'image/ground_1.jpg';
+    imgGround_1.onload = function(){
+      let ptrn = ctxGround.createPattern(imgGround_1,'repeat');
       ctxGround.fillStyle = ptrn;
       //ctxGround.translate(0, 200);
-      ctxGround.fillRect(0, 200, 600,401);
+      ctxGround.fillRect(0, 320,600,250);
+    }
+
+    let imgGround_2 = new Image();
+    imgGround_2.src = 'image/ground_2.jpg';
+    imgGround_2.onload = function(){
+      let ptrn = ctxGround.createPattern(imgGround_2,'repeat');
+      ctxGround.fillStyle = ptrn;
+      ctxGround.fillRect(0, 250,600,130);
+    }
+
+    let imgGround_3 = new Image();
+    imgGround_3.src = 'image/ground_3.jpg';
+    imgGround_3.onload = function(){
+      let ptrn = ctxGround.createPattern(imgGround_3,'repeat');
+      ctxGround.fillStyle = ptrn;
+      ctxGround.fillRect(0, 210, 600, 40);
     }
     
     let imgGrass = new Image();
@@ -32,25 +39,28 @@ let body = document.body;
       let ptrn = ctxGround.createPattern(imgGrass,'repeat');
       ctxGround.fillStyle = ptrn;
       //ctxGround.translate(0, -10);
-      ctxGround.fillRect(0, 190, 600, 10);
+      ctxGround.fillRect(0,190,600,10);
       //ctxGround.translate(0, -190);
     }
+
+    ctxGround.fillStyle = 'black';
+    ctxGround.fillRect(0, 200, 600, 10);
     
     let imgHarryPotter = new Image();
     imgHarryPotter.src = 'image/harry_potter_1.png';
     imgHarryPotter.onload = function(){
-      ctxHarry.drawImage(imgHarryPotter, 80, 101);
+      ctxHarry.drawImage(imgHarryPotter,80,101);
     }
-   
+
     
+
   }
   body.addEventListener('load', drawFirstScene());
 
     let drawLeftEntrance = () => {
       let ctxLeftEntrance = document.getElementById('layer-left-entrance').getContext('2d');
-      //ctxLeftEntrance.fillStyle = 'rgb(165, 132, 42)';
-      //ctxLeftEntrance.fillRect(35,189,57,11);
       ctxLeftEntrance.fillStyle = 'white';
+      ctxLeftEntrance.fillRect(39,189,49,11);
       ctxLeftEntrance.strokeStyle = 'white';
       ctxLeftEntrance.beginPath();
       ctxLeftEntrance.moveTo(40, 200);
@@ -69,12 +79,6 @@ let body = document.body;
       ctxLeftEntrance.lineTo(40, 200);
       ctxLeftEntrance.stroke();
       ctxLeftEntrance.fill();
-
-      let imgLuke = new Image();
-      imgLuke.src = 'image/bet_80.png';
-      imgLuke.onload = function(){
-        ctxLeftEntrance.drawImage(imgLuke, 26, 172);
-    }
     }
   body.addEventListener('load', drawLeftEntrance());  
     
@@ -88,9 +92,8 @@ let body = document.body;
 
   let drawRightEntrance = () => {
     let ctxRightEntrance = document.getElementById('layer-right-entrance').getContext('2d');
-    //ctxRightEntrance.fillStyle = 'white';
-    //ctxRightEntrance.fillRect(513,189,49,11);
     ctxRightEntrance.fillStyle = 'white';
+    ctxRightEntrance.fillRect(513,189,49,11);
     ctxRightEntrance.strokeStyle = 'white';
     ctxRightEntrance.beginPath();
     ctxRightEntrance.moveTo(560, 200);
@@ -109,12 +112,6 @@ let body = document.body;
     ctxRightEntrance.lineTo(560, 200);
     ctxRightEntrance.stroke();
     ctxRightEntrance.fill();
-
-    let imgLuke = new Image();
-    imgLuke.src = 'image/bet_80.png';
-    imgLuke.onload = function(){
-    ctxRightEntrance.drawImage(imgLuke, 497, 172);
-    }
   }  
 body.addEventListener('load', drawRightEntrance());  
 
@@ -270,7 +267,7 @@ let drawTwelfthScene = () => {
     ctxReserveGround.fillStyle = lingrad;
     ctxReserveGround.fillRect(0,0,300,100);
     let imgGround = new Image();
-    imgGround.src = 'image/ground_y_1.jpg';
+    imgGround.src = 'image/ground_y.jpg';
     imgGround.onload = function(){
       let ptrn = ctxReserveGround.createPattern(imgGround,'repeat');
       ctxReserveGround.fillStyle = ptrn;
