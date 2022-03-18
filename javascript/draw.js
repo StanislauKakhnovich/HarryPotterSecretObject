@@ -6,11 +6,13 @@ let body = document.body;
     let lingrad = ctxGround.createLinearGradient(0,0,0,150);
     lingrad.addColorStop(0, '#00ABEB');
     lingrad.addColorStop(1, '#fff');
-    let imgGround = new Image();
+    ctxGround.fillStyle = lingrad;
+    ctxGround.fillRect(0,0,600,200);
+
+    setTimeout(()=>{
+      let imgGround = new Image();
     imgGround.src = 'image/ground_y.jpg';
     imgGround.onload = function(){
-      ctxGround.fillStyle = lingrad;
-      ctxGround.fillRect(0,0,600,200);
       let ptrn = ctxGround.createPattern(imgGround,'repeat');
       ctxGround.fillStyle = ptrn;
       ctxGround.translate(0, 200);
@@ -32,6 +34,8 @@ let body = document.body;
     imgHarryPotter.onload = function(){
       ctxHarry.drawImage(imgHarryPotter,80,101);
     }
+    }, 100);
+    
   }
   body.addEventListener('load', drawFirstScene());
 
