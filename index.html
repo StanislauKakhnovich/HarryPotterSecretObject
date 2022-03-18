@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script id="controlCode"></script>
+    
+</head>
+<body >
+    
+    <section id="sidebar">
+        <div class="header">
+            <h1 class="title">HARRY POTTER AND THE SECRET OBJECT</h1>
+            <div id="level-counter">
+                <span id="arrow-left" class="arrow left disabled">
+                    <span class="triangle"></span>
+                </span>
+                <span id="level-indicator">
+                    <span id="labelLevel" class="translate">Уровень</span>
+                    <span class="current">1</span>
+                    <span id="labelOf"class="translate">из</span>
+                    <span class="total">16</span>
+                    <span class="caret">&#9660</span>
+                </span>
+                <span class="arrow right">
+                    <span id="arrow-right" class="triangle"></span>
+                </span>
+            </div>
+        </div>
+        <div id="instructions">
+            <p>Приветствую вас в игре HARRY POTTER AND THE SECRET OBJECT, которая поможет вам понять объекты. Объекты 
+                используются для хранения коллекций различных значений и более сложных сущностей. В JavaScript
+                объекты используются очень часто, это одна из основ языка. Поэтому вы должны понять их, 
+                прежде чем углубляться куда-либо ещё.  
+            </p>
+            <p>Объект может быть создан с помощью фигурных скобок {…} с необязательным списком свойств. 
+                Свойство – это пара «ключ: значение», где ключ – это строка (также называемая «именем свойства»), 
+                а значение может быть чем угодно.
+            </p>
+            <p>Пустой объект можно создать, используя один из двух вариантов синтаксиса:
+                <br>
+                <code class="help">var user = new Object();</code>
+                <br>
+                <code class="help">var user = {};</code>
+            </p>
+            <p>Обычно используют вариант с фигурными скобками {...}. 
+                Такое объявление называют литералом объекта или литеральной нотацией.
+            </p>
+            <p>Гарри Поттер вырос и стал работать в Министерстве Магии. Ему поручили создать подземное
+                 секретное хранилище в котором будут храниться свитки с запрещенными заклинаниями. Помогите Гарри Поттеру создать 
+                хранилище свитков, которое будет нашим объектом. Объявите переменную secretObject и присвойте ей ссылку на пустой объект,
+                как показано в одном из примеров выше. (Здесь и далее надо использовать var при объявлении переменных). После написания кода нажмите Enter.
+            </p>
+        </div>
+        <div id="editor">
+            <div id="css">
+                <div class="line-numbers">
+                    1
+                    <br>
+                    2
+                    <br>
+                    3
+                    <br>
+                    4
+                    <br>
+                    5
+                    <br>
+                    6
+                    <br>
+                    7
+                    <br>
+                    8
+                    <br>
+                    9
+                    <br>
+                    10
+                </div>
+                <pre id="before"></pre>
+                <textarea id="code" autofocus autocapitalize="none" style="height: 24px;"></textarea>
+                <pre id="after"></pre>
+            </div>
+            
+            <button id="next" class="translate disabled">Следующий</button>
+            <button id="reset" class="translate">Сбросить уровень</button>
+        </div>
+        <div class="credits">
+            <span id="labelFooter" class="translate">Игра HARRY POTTER AND THE SECRET OBJECT создана 
+                Кохновичем Станиславом, в качестве выпускного проекта по курсу JavaScript, 2022 год.</span>
+            <a href="https://github.com/StanislauKakhnovich" target="new_blank" title="GitHub">GitHub</a>
+            <a href="https://t.me/Stanislau_Kakhnovich" target="new_blank" title="Telegram">Telegram</a>
+            <a href="https://www.instagram.com/stanislavKokhnovich" target="new_blank" title="Instagram">Instagram</a>
+        </div>
+    </section>
+    
+    <section id="view">
+        <div id="board">
+            <canvas  id="layer-ground" width="600" height="600"></canvas>
+            <canvas  id="layer-harry" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-left-entrance" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-repository" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-right-entrance" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-scrolls-over-second-level" width="600" height="600"></canvas>
+            <canvas  class="hidden" id="layer-scrolls-under-second-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-scrolls-over-third-level" width="600" height="600"></canvas>
+            <canvas  class="hidden" id="layer-scrolls-under-third-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-scrolls-over-fifth-level" width="600" height="600"></canvas>
+            <canvas  class="hidden" id="layer-scrolls-under-fifth-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-scrolls-over-seventh-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-unrolled-scroll-ninth-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-scrolls-over-eleventh-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-scrolls-under-eleventh-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-reserve-ground-twelfth-level" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-reserve-repository-twelfth-level" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-reserve-scrolls-thirteenth-level" width="600" height="600"></canvas>
+            <canvas class="hidden"  id="layer-animation-level" width="600" height="600"></canvas>
+        </div>
+    </section>
+    
+<script src="javascript/draw.js"></script>
+<script src="javascript/language.js"></script>
+<script src="javascript/mainscript.js"></script>
+
+</body>
+
+</html>
