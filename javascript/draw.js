@@ -18,12 +18,12 @@ let body = document.body;
     
    
       let imgGround = new Image();
-    imgGround.src = 'image/ground_y.jpg';
+    imgGround.src = 'image/ground_y_1.jpg';
     imgGround.onload = function(){
       let ptrn = ctxGround.createPattern(imgGround,'repeat');
       ctxGround.fillStyle = ptrn;
-      ctxGround.translate(0, 200);
-      ctxGround.fillRect(0, 0, 600,401);
+      //ctxGround.translate(0, 200);
+      ctxGround.fillRect(0, 200, 600,401);
     }
     
     let imgGrass = new Image();
@@ -31,9 +31,9 @@ let body = document.body;
     imgGrass.onload = function(){
       let ptrn = ctxGround.createPattern(imgGrass,'repeat');
       ctxGround.fillStyle = ptrn;
-      ctxGround.translate(0, -10);
-      ctxGround.fillRect(0, 0, 600, 10);
-      ctxGround.translate(0, -190);
+      //ctxGround.translate(0, -10);
+      ctxGround.fillRect(0, 190, 600, 10);
+      //ctxGround.translate(0, -190);
     }
     
     let imgHarryPotter = new Image();
@@ -48,8 +48,8 @@ let body = document.body;
 
     let drawLeftEntrance = () => {
       let ctxLeftEntrance = document.getElementById('layer-left-entrance').getContext('2d');
-      ctxLeftEntrance.fillStyle = 'rgb(165, 132, 42)';
-      ctxLeftEntrance.fillRect(35,189,57,11);
+      //ctxLeftEntrance.fillStyle = 'rgb(165, 132, 42)';
+      //ctxLeftEntrance.fillRect(35,189,57,11);
       ctxLeftEntrance.fillStyle = 'white';
       ctxLeftEntrance.strokeStyle = 'white';
       ctxLeftEntrance.beginPath();
@@ -69,6 +69,12 @@ let body = document.body;
       ctxLeftEntrance.lineTo(40, 200);
       ctxLeftEntrance.stroke();
       ctxLeftEntrance.fill();
+
+      let imgLuke = new Image();
+      imgLuke.src = 'image/bet_80.png';
+      imgLuke.onload = function(){
+        ctxLeftEntrance.drawImage(imgLuke, 26, 172);
+    }
     }
   body.addEventListener('load', drawLeftEntrance());  
     
@@ -82,8 +88,9 @@ let body = document.body;
 
   let drawRightEntrance = () => {
     let ctxRightEntrance = document.getElementById('layer-right-entrance').getContext('2d');
+    //ctxRightEntrance.fillStyle = 'white';
+    //ctxRightEntrance.fillRect(513,189,49,11);
     ctxRightEntrance.fillStyle = 'white';
-    ctxRightEntrance.fillRect(513,189,49,11);
     ctxRightEntrance.strokeStyle = 'white';
     ctxRightEntrance.beginPath();
     ctxRightEntrance.moveTo(560, 200);
@@ -102,6 +109,12 @@ let body = document.body;
     ctxRightEntrance.lineTo(560, 200);
     ctxRightEntrance.stroke();
     ctxRightEntrance.fill();
+
+    let imgLuke = new Image();
+    imgLuke.src = 'image/bet_80.png';
+    imgLuke.onload = function(){
+    ctxRightEntrance.drawImage(imgLuke, 497, 172);
+    }
   }  
 body.addEventListener('load', drawRightEntrance());  
 
@@ -257,12 +270,12 @@ let drawTwelfthScene = () => {
     ctxReserveGround.fillStyle = lingrad;
     ctxReserveGround.fillRect(0,0,300,100);
     let imgGround = new Image();
-    imgGround.src = 'image/ground_y.jpg';
+    imgGround.src = 'image/ground_y_1.jpg';
     imgGround.onload = function(){
       let ptrn = ctxReserveGround.createPattern(imgGround,'repeat');
       ctxReserveGround.fillStyle = ptrn;
-      ctxReserveGround.translate(0, 100);
-      ctxReserveGround.fillRect(0, 0,300,202);
+      //ctxReserveGround.translate(0, 100);
+      ctxReserveGround.fillRect(0, 100,300,202);
     }
     
     let imgGrass = new Image();
@@ -270,9 +283,9 @@ let drawTwelfthScene = () => {
     imgGrass.onload = function(){
       let ptrn = ctxReserveGround.createPattern(imgGrass,'repeat');
       ctxReserveGround.fillStyle = ptrn;
-      ctxReserveGround.translate(0, -5);
-      ctxReserveGround.fillRect(0,0,300,5);
-      ctxReserveGround.translate(0, -95);
+      //ctxReserveGround.translate(0, -5);
+      ctxReserveGround.fillRect(0,95,300,5);
+      //ctxReserveGround.translate(0, -95);
     }
 
 }
