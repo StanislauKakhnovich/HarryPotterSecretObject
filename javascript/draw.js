@@ -6,11 +6,11 @@ let body = document.body;
     let lingrad = ctxGround.createLinearGradient(0,0,0,150);
     lingrad.addColorStop(0, '#00ABEB');
     lingrad.addColorStop(1, '#fff');
-    ctxGround.fillStyle = lingrad;
-    ctxGround.fillRect(0,0,600,200);
     let imgGround = new Image();
     imgGround.src = 'image/ground_y.jpg';
     imgGround.onload = function(){
+      ctxGround.fillStyle = lingrad;
+      ctxGround.fillRect(0,0,600,200);
       let ptrn = ctxGround.createPattern(imgGround,'repeat');
       ctxGround.fillStyle = ptrn;
       ctxGround.translate(0, 200);
