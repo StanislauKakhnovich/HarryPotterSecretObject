@@ -30,7 +30,7 @@ let body = document.body;
     imgGround_3.onload = function(){
       let ptrn = ctxGround.createPattern(imgGround_3,'repeat');
       ctxGround.fillStyle = ptrn;
-      ctxGround.fillRect(0, 210, 600, 40);
+      ctxGround.fillRect(0, 204, 600, 46);
     }
     
     let imgGrass = new Image();
@@ -44,7 +44,7 @@ let body = document.body;
     }
 
     ctxGround.fillStyle = 'black';
-    ctxGround.fillRect(0, 200, 600, 10);
+    ctxGround.fillRect(0, 200, 600, 4);
     
     let imgHarryPotter = new Image();
     imgHarryPotter.src = 'image/harry_potter_1.png';
@@ -274,6 +274,7 @@ let drawTwelfthScene = () => {
       //ctxReserveGround.translate(0, 100);
       ctxReserveGround.fillRect(0, 100,300,202);
     }
+    
     
     let imgGrass = new Image();
     imgGrass.src = 'image/grass.jpg';
