@@ -261,3 +261,9 @@ canvas {
         font-size: 18px;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    button {
+        font-size: 12px;
+    }
+}
