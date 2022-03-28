@@ -13,7 +13,6 @@ let body = document.body;
     imgGround_1.onload = function(){
       let ptrn = ctxGround.createPattern(imgGround_1,'repeat');
       ctxGround.fillStyle = ptrn;
-      //ctxGround.translate(0, 200);
       ctxGround.fillRect(0, 320,600,250);
     }
 
@@ -30,29 +29,30 @@ let body = document.body;
     imgGround_3.onload = function(){
       let ptrn = ctxGround.createPattern(imgGround_3,'repeat');
       ctxGround.fillStyle = ptrn;
-      ctxGround.fillRect(0, 204, 600, 46);
+      ctxGround.fillRect(0, 204, 600, 80);
     }
-    
+
+    let imgGround_4 = new Image();
+    imgGround_4.src = 'image/ground_4.jpg';
+    imgGround_4.onload = function(){
+      let ptrn = ctxGround.createPattern(imgGround_4,'repeat');
+      ctxGround.fillStyle = ptrn;
+      ctxGround.fillRect(0, 200, 600, 15);
+    }
+
     let imgGrass = new Image();
     imgGrass.src = 'image/grass.jpg';
     imgGrass.onload = function(){
       let ptrn = ctxGround.createPattern(imgGrass,'repeat');
       ctxGround.fillStyle = ptrn;
-      //ctxGround.translate(0, -10);
       ctxGround.fillRect(0,190,600,10);
-      //ctxGround.translate(0, -190);
     }
 
-    ctxGround.fillStyle = 'black';
-    ctxGround.fillRect(0, 200, 600, 4);
-    
     let imgHarryPotter = new Image();
     imgHarryPotter.src = 'image/harry_potter_1.png';
     imgHarryPotter.onload = function(){
       ctxHarry.drawImage(imgHarryPotter,80,101);
     }
-
-    
 
   }
   body.addEventListener('load', drawFirstScene());
@@ -124,12 +124,6 @@ body.addEventListener('load', drawRightEntrance());
       for (let i=0; i < 2; i++) {
         ctxScrollOver.drawImage(imgScrollOver, x+=15, 166);
       }
-      /*
-      x = 210;
-      for (let i=0; i < 4; i++) {
-        ctxScrollOver.drawImage(imgScrollOver, x+=15, 152);
-      }
-      */
     }
   }
 body.addEventListener('load', drawScrollOverSecondLevel());
@@ -143,12 +137,6 @@ body.addEventListener('load', drawScrollOverSecondLevel());
       for (let i=0; i < 2; i++) {
         ctxScrollUnder.drawImage(imgScrollUnder, x+=15, 425);
       }
-      /*
-      x = 210;
-      for (let i=0; i < 4; i++) {
-        ctxScrollUnder.drawImage(imgScrollUnder, x+=15, 409);
-      }
-      */
     }
   }
 body.addEventListener('load', drawScrollUnderSecondLevel()); 
@@ -226,7 +214,6 @@ let drawNinthScene = () => {
   imgUnrolledScroll.onload = function(){
     ctxUnrolledScroll.drawImage(imgUnrolledScroll,300, 20);
     ctxUnrolledScroll.font = "24px Fredoka One";
-    //ctxUnrolledScroll.fillStyle = 'red';
     ctxUnrolledScroll.fillText("console.log", 370, 90);
   }
 }
@@ -271,7 +258,6 @@ let drawTwelfthScene = () => {
     imgGround.onload = function(){
       let ptrn = ctxReserveGround.createPattern(imgGround,'repeat');
       ctxReserveGround.fillStyle = ptrn;
-      //ctxReserveGround.translate(0, 100);
       ctxReserveGround.fillRect(0, 100,300,202);
     }
     
@@ -281,9 +267,7 @@ let drawTwelfthScene = () => {
     imgGrass.onload = function(){
       let ptrn = ctxReserveGround.createPattern(imgGrass,'repeat');
       ctxReserveGround.fillStyle = ptrn;
-      //ctxReserveGround.translate(0, -5);
       ctxReserveGround.fillRect(0,95,300,5);
-      //ctxReserveGround.translate(0, -95);
     }
 
 }

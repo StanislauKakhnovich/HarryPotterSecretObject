@@ -1,3 +1,6 @@
+let levelScroller = document.querySelector('#scroller');
+let registrationField = document.querySelector('#zero-level');
+let editor = document.querySelector('#editor');
 let arrowRight = document.querySelector('.arrow.right');
 let arrowLeft = document.querySelector('.arrow.left');
 let buttonNext = document.querySelector('#next');
@@ -26,33 +29,47 @@ let reservePlace = document.querySelector('#layer-reserve-ground-twelfth-level')
 let reserveRepository = document.querySelector('#layer-reserve-repository-twelfth-level');
 let reserveScrolls = document.querySelector('#layer-reserve-scrolls-thirteenth-level');
 let finalAnimation = document.querySelector('#layer-animation-level');
-
+let buttonEntry = document.querySelector('#btn-entry');
 
 
 if (sessionStorage.getItem('counter') === null) {
-    var counter = 1;
+    var counter = 0;
 } else {
     var counter = sessionStorage.getItem('counter');
 }
 
 let switchingLevel = () => {
     instruction.innerHTML = '';
-    instruction.innerHTML = levels[counter-1].instructions.ru;
+    instruction.innerHTML = levels[counter].instructions[languageRender];
     before.innerText = '';
-    before.innerText = levels[counter-1].before;
+    before.innerText = levels[counter].before;
     after.innerText = '';
-    after.innerText = levels[counter-1].after;
+    after.innerText = levels[counter].after;
     currentLevel.innerText = counter;
     enteredText.innerHTML = '';
 }
 
+let switchingZeroLevel = () => {
+    switchingLevel();
+    levelScroller.classList.add('hidden');
+    registrationField.classList.remove('hidden');
+    editor.classList.add('hidden');
+    sessionStorage.removeItem('codeFirstLevel');
+    arrowLeft.classList.add('disabled');
+}
+
 let switchingFirstLevel = () => {
     switchingLevel();
+    formSignUp.classList.add('hidden');
+    formSignIn.classList.add('hidden');
+    levelScroller.classList.remove('hidden');
+    registrationField.classList.add('hidden');
+    editor.classList.remove('hidden');
     enteredText.style.height = '24px';
     leftEntrance.classList.add('hidden');
     repository.classList.add('hidden');
     buttonNext.classList.add('disabled');
-    arrowLeft.classList.add('disabled');
+    arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeSecondLevel');
     sessionStorage.removeItem('codeThirdLevel');
     sessionStorage.removeItem('codeFourthLevel');
@@ -63,6 +80,11 @@ let switchingFirstLevel = () => {
     scrollSecondLevelOver.classList.add('hidden');
     scrollSecondLevelUnder.classList.add('hidden');
 }
+
+buttonEntry.addEventListener('click', () => {
+    counter = 1;
+    switchingFirstLevel();
+});
 
 let switchingSecondLevel = () => {
     switchingLevel();
@@ -339,8 +361,11 @@ let switchingSixteenthLevel = () => {
     arrowLeft.classList.remove('disabled');
     arrowRight.classList.add('disabled');
     sessionStorage.removeItem('codeFifteenthLevel');
-    //sessionStorage.removeItem('codeSixteenthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeSixteenthLevel');
+}
+
+if (counter == 0) {
+    switchingZeroLevel();
 }
 
 if (counter == 1) {
@@ -367,6 +392,7 @@ var secretObject = {
 };
 
 var reserveEntrance;
+
 
 if (counter == 2) {
     controlCode.innerHTML = `secretObject = {${sessionStorage.getItem('codeSecondLevel')}}`;
@@ -444,7 +470,6 @@ if (counter == 7) {
     switchingSeventhLevel();
 }
 if (secretObject.ornare === 'Dictum morbi et. Aenean aenean sed vi') {
-    //console.log(1);
     scrollThirdLevelUnder.classList.remove('hidden');
     buttonNext.classList.remove('disabled');
 }
@@ -464,7 +489,6 @@ if (counter == 8) {
     }, 200);
     switchingEighthLevel();
 }
-//if (enteredText.value == )
 
 if (counter == 9) {
     setTimeout(()=>{
@@ -648,8 +672,6 @@ if (counter == 16) {
 if (reserveEntrance === null || typeof reserveEntrance !== 'object') { 
     rightEntrance.classList.add('hidden');
     finalAnimation.classList.remove('hidden');
-    //buttonNext.classList.remove('disabled');
-    //setTimeout(drawFinalAnimation, 1000);
     drawFinalAnimation();
   
     setTimeout(() =>{
@@ -659,8 +681,6 @@ if (reserveEntrance === null || typeof reserveEntrance !== 'object') {
         scrollFifthLevelUnder.classList.add('hidden');
         scrollEleventhLevelUnder.classList.add('hidden');
     }, 1800);
-   
-  
 }
 
 enteredText.addEventListener('keydown', (event) => {
@@ -823,12 +843,14 @@ buttonNext.addEventListener('click', () => {
     if (!buttonNext.classList.contains('disabled') && counter == 15) {
         counter++;
         switchingSixteenthLevel();
-    }
-    
+    }  
 });
 
 arrowRight.addEventListener('click', () => {
     counter++ ;
+    if (counter == 1){
+        switchingFirstLevel();
+    }
     if(counter == 2){
         switchingSecondLevel(); 
     }
@@ -878,6 +900,11 @@ arrowRight.addEventListener('click', () => {
 
 arrowLeft.addEventListener('click', () => {
     counter-- ;
+    
+    if(counter == 0){
+        switchingZeroLevel(); 
+    }
+    
     if(counter == 1){
         switchingFirstLevel(); 
     }

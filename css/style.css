@@ -247,6 +247,136 @@ canvas {
     display: none;
 }
 
+.start-button {
+    margin: 10px;
+    background-color: green;
+}
+
+div.registration {
+        margin-left: 107px;   
+        margin-top: 10px;  
+}
+
+div.registration input {
+    width: 60%;
+    box-sizing: border-box;
+}
+form {
+    padding: 10px;
+}
+label {
+    
+    width: 107px;
+    float: left;
+    clear: left;
+    
+    
+}
+.error {
+    display: none;
+    color: red;
+}
+
+#submit,
+#entry {
+    margin-top: 20px;
+}
+/*
+.inactive {
+    opacity: 0.5;
+}
+*/
+
+#buttons-language {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 600px;
+}
+
+.language {
+    background-color: red;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1801px) {
+    #buttons-language {
+        max-width: 900px;
+    }
+    #board {
+        min-width: 900px;
+        min-height: 900px;   
+    }
+    canvas { 
+        width: 900px;
+        height: 900px;
+    }
+    
+}
+
+@media only screen and (max-width: 1800px) {
+    #buttons-language {
+        max-width: 800px;
+    }
+    #board {
+        min-width: 800px;
+        min-height: 800px;   
+    }
+    canvas { 
+        width: 800px;
+        height: 800px;
+    }
+    
+}
+
+@media only screen and (max-width: 1600px) {
+    #buttons-language {
+        max-width: 700px;
+    }
+    #board {
+        min-width: 700px;
+        min-height: 700px;   
+    }
+    canvas { 
+        width: 700px;
+        height: 700px;
+    }
+    
+}
+
+@media only screen and (max-width: 1450px) {
+    #buttons-language {
+        max-width: 600px;
+    }
+    #board {
+        min-width: 600px;
+        min-height: 600px;   
+    }
+    canvas { 
+        width: 600px;
+        height: 600px;
+    }
+    
+}
+
+@media only all and (max-width: 1050px){
+   
+    div.registration {
+        margin-left: 0;
+       
+    }
+
+    .clearfix::after {
+        content: " ";
+        display: block;
+        visibility: hidden;
+        clear: both;
+        line-height: 0;
+        height: 0;
+    }
+
+}
+
 @media only screen and (max-width: 767px) {
     body {
         flex-direction: column-reverse;
@@ -269,6 +399,9 @@ canvas {
 }
 
 @media only screen and (max-width: 600px) {
+    #buttons-language {
+        max-width: 450px;
+    }
     #board {
         min-width: 450px;
         min-height: 450px;   
@@ -283,6 +416,9 @@ canvas {
 }
 
 @media only screen and (max-width: 451px) {
+    #buttons-language {
+        max-width: 300px;
+    }
     #board {
         min-width: 300px;
         min-height: 300px;   

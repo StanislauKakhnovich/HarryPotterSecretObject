@@ -15,47 +15,106 @@
     <section id="sidebar">
         <div class="header">
             <h1 class="title">HARRY POTTER AND THE SECRET OBJECT</h1>
-            <div id="level-counter">
-                <span id="arrow-left" class="arrow left disabled">
-                    <span class="triangle"></span>
-                </span>
-                <span id="level-indicator">
-                    <span id="labelLevel" class="translate">Уровень</span>
-                    <span class="current">1</span>
-                    <span id="labelOf"class="translate">из</span>
-                    <span class="total">16</span>
-                    <span class="caret">&#9660</span>
-                </span>
-                <span class="arrow right">
-                    <span id="arrow-right" class="triangle"></span>
-                </span>
+            <div id="scroller">
+                <div id="level-counter">
+                    <span id="arrow-left" class="arrow left disabled">
+                        <span class="triangle"></span>
+                    </span>
+                    <span id="level-indicator">
+                        <span id="labelLevel" class="translate">Level</span>
+                        <span class="current">1</span>
+                        <span id="labelOf"class="translate">из</span>
+                        <span class="total">16</span>
+                        <span class="caret">&#9660</span>
+                    </span>
+                    <span class="arrow right">
+                        <span id="arrow-right" class="triangle"></span>
+                    </span>
+                </div>
+                
             </div>
+           
+            
         </div>
         <div id="instructions">
-            <p>Приветствую вас в игре HARRY POTTER AND THE SECRET OBJECT, которая поможет вам понять объекты. Объекты 
-                используются для хранения коллекций различных значений и более сложных сущностей. В JavaScript
-                объекты используются очень часто, это одна из основ языка. Поэтому вы должны понять их, 
-                прежде чем углубляться куда-либо ещё.  
+            <p>Welcome to the game HARRY POTTER AND THE SECRET OBJECT, which will help you understand objects. In JavaScript
+                objects are used very often, this is one of the foundations of the language. Therefore, you must understand them
+                before going anywhere else.
             </p>
-            <p>Объект может быть создан с помощью фигурных скобок {…} с необязательным списком свойств. 
-                Свойство – это пара «ключ: значение», где ключ – это строка (также называемая «именем свойства»), 
-                а значение может быть чем угодно.
+            <p>
+                We invite you to complete a simple registration on our website. Registration is required in order for your level in the game to be saved on the server.
+                This will allow you to exit the game at any time and return to the level you have reached.
             </p>
-            <p>Пустой объект можно создать, используя один из двух вариантов синтаксиса:
-                <br>
-                <code class="help">var user = new Object();</code>
-                <br>
-                <code class="help">var user = {};</code>
+            <p>
+                You can also continue playing without registering.
             </p>
-            <p>Обычно используют вариант с фигурными скобками {...}. 
-                Такое объявление называют литералом объекта или литеральной нотацией.
-            </p>
-            <p>Гарри Поттер вырос и стал работать в Министерстве Магии. Ему поручили создать подземное
-                 секретное хранилище в котором будут храниться свитки с запрещенными заклинаниями. Помогите Гарри Поттеру создать 
-                хранилище свитков, которое будет нашим объектом. Объявите переменную secretObject и присвойте ей ссылку на пустой объект,
-                как показано в одном из примеров выше. (Здесь и далее надо использовать var при объявлении переменных). После написания кода нажмите Enter.
-            </p>
+            
         </div>
+
+        <div id="zero-level" class="hidden">
+            <button id="btn-sign-up" class="start-button">Sign Up</button>
+            <button id="btn-sign-in" class="start-button">Sign In</button>
+            <button id="btn-entry" class="start-button">Continue without registration</button>
+            <form  action="#" novalidate class="form-sign-up hidden">
+                <div class="clearfix">
+                    <label id="label-name" for="name">Your name:</label>
+                    <div class="registration"><input  id="name" type="text" name="nameUser">
+                        <div class="error" id="error1">The field cannot be empty.</div>
+                        <div class="error" id="error11">Enter up to 30 characters.</div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label id="label-country" for="country">Country:</label>
+                    <div class="registration"><input  id="country" type="text" name="country">
+                        <div class="error" id="error2">The field cannot be empty.</div>
+                        <div class="error" id="error21">Enter up to 30 characters.</div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label id="label-town" for="town">Town:</label>
+                    <div class="registration"><input  id="town" type="text" name="town">
+                        <div class="error" id="error3">The field cannot be empty.</div>
+                        <div class="error" id="error31">Enter up to 30 characters.</div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label id="label-e-mail-up" for="e-mail-up">Your e-mail:</label>
+                    <div class="registration"><input  id="e-mail-up" type="text" name="mail">
+                        <div class="error" id="error4">The field cannot be empty.</div>
+                        <div class="error" id="error41">Enter up to 30 characters.</div>
+                        <div class="error" id="error42">Please enter a valid e-mail.</div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label id="label-password-up" for="password-up">Enter password:</label>
+                    <div class="registration"><input  id="password-up" type="text" name="password">
+                        <div class="error" id="error5">The field cannot be empty.</div>
+                        <div class="error" id="error51">Enter up to 30 characters.</div>
+                    </div>
+                </div>
+                <button id="submit" type="submit" class="inactive">Register</button>
+            </form>
+            <form  action="#" novalidate class="form-sign-in hidden">
+                <div class="clearfix">
+                    <label id="label-e-mail-in" for="e-mail-in">Your e-mail:</label>
+                    <div class="registration"><input  id="e-mail-in" type="text" name="mail">
+                        <div class="error" id="error6">The field cannot be empty.</div>
+                        <div class="error" id="error61">Enter up to 30 characters.</div>
+                        <div class="error" id="error62">Please enter a valid e-mail.</div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label id="label-password-in" for="password-in">Enter password:</label>
+                    <div class="registration"><input  id="password-in" type="text" name="password">
+                        <div class="error" id="error7">The field cannot be empty.</div>
+                        <div class="error" id="error71">Enter up to 30 characters.</div>
+                    </div>
+                </div>
+                <button id="entry" type="submit" class="inactive">Sign in</button>
+                <div class="error" id="error8">Wrong e-mail or password entered.</div>
+            </form>
+        </div>
+       
         <div id="editor">
             <div id="css">
                 <div class="line-numbers">
@@ -84,12 +143,11 @@
                 <pre id="after"></pre>
             </div>
             
-            <button id="next" class="translate disabled">Следующий</button>
-            <button id="reset" class="translate">Сбросить уровень</button>
+            <button id="next" class="translate disabled">Next</button>
+            <button id="reset" class="translate">Reset Level</button>
         </div>
         <div class="credits">
-            <span id="labelFooter" class="translate">Игра HARRY POTTER AND THE SECRET OBJECT создана 
-                Кохновичем Станиславом, в качестве выпускного проекта по курсу JavaScript, 2022 год.</span>
+            <span id="labelFooter" class="translate">The game HARRY POTTER AND THE SECRET OBJECT was created by Stanislau Kakhnovich as a graduation project for the JavaScript course, 2022.</span>
             <a href="https://github.com/StanislauKakhnovich" target="new_blank" title="GitHub">GitHub</a>
             <a href="https://t.me/Stanislau_Kakhnovich" target="new_blank" title="Telegram">Telegram</a>
             <a href="https://www.instagram.com/stanislavKokhnovich" target="new_blank" title="Instagram">Instagram</a>
@@ -97,6 +155,10 @@
     </section>
     
     <section id="view">
+        <div id="buttons-language">
+            <button id="en" class="language">en</button>
+            <button id="ru" class="language">ru</button>
+        </div>
         <div id="board">
             <canvas  id="layer-ground" width="600" height="600"></canvas>
             <canvas  id="layer-harry" width="600" height="600"></canvas>
@@ -104,11 +166,11 @@
             <canvas class="hidden" id="layer-repository" width="600" height="600"></canvas>
             <canvas class="hidden" id="layer-right-entrance" width="600" height="600"></canvas>
             <canvas class="hidden"  id="layer-scrolls-over-second-level" width="600" height="600"></canvas>
-            <canvas  class="hidden" id="layer-scrolls-under-second-level" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-scrolls-under-second-level" width="600" height="600"></canvas>
             <canvas class="hidden"  id="layer-scrolls-over-third-level" width="600" height="600"></canvas>
-            <canvas  class="hidden" id="layer-scrolls-under-third-level" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-scrolls-under-third-level" width="600" height="600"></canvas>
             <canvas class="hidden"  id="layer-scrolls-over-fifth-level" width="600" height="600"></canvas>
-            <canvas  class="hidden" id="layer-scrolls-under-fifth-level" width="600" height="600"></canvas>
+            <canvas class="hidden" id="layer-scrolls-under-fifth-level" width="600" height="600"></canvas>
             <canvas class="hidden"  id="layer-scrolls-over-seventh-level" width="600" height="600"></canvas>
             <canvas class="hidden"  id="layer-unrolled-scroll-ninth-level" width="600" height="600"></canvas>
             <canvas class="hidden"  id="layer-scrolls-over-eleventh-level" width="600" height="600"></canvas>
@@ -121,8 +183,18 @@
     </section>
     
 <script src="javascript/draw.js" defer></script>
-<script src="javascript/language.js" defer></script>
+<script src="javascript/languageButtonsForms.js" defer></script>
+<script src="javascript/languageText.js" defer></script>
+<script src="javascript/start.js" defer></script>
 <script src="javascript/mainscript.js" defer></script>
+<script src="javascript/postForm.js" defer></script>
+<script src="javascript/getCounter.js" defer></script>
+<script src="javascript/postCounter.js" defer></script>
+
+<script src="javascript/validateForm.js" defer></script>
+
+
+
 
 </body>
 
