@@ -4,7 +4,7 @@ let levels = [
         name: `level 0`,
         instructions: { 
             'ru': `
-                    <p>Приветствую вас в игре HARRY POTTER AND THE SECRET OBJECT, которая поможет вам понять объекты. В JavaScript
+                    <p>Приветствую вас в игре <span translate="no">HARRY POTTER AND THE SECRET OBJECT</span>, которая поможет вам понять объекты. В <span translate="no">JavaScript</span>
                         объекты используются очень часто, это одна из основ языка. Поэтому вы должны понять их, 
                         прежде чем углубляться куда-либо ещё.  
                     </p>
@@ -17,7 +17,7 @@ let levels = [
                     </p>
                     `,
             'en': `
-                    <p>Welcome to the game HARRY POTTER AND THE SECRET OBJECT, which will help you understand objects. In JavaScript
+                    <p>Welcome to the game <span translate="no">HARRY POTTER AND THE SECRET OBJECT</span>, which will help you understand objects. In <span translate="no">JavaScript</span>
                         objects are used very often, this is one of the foundations of the language. Therefore, you must understand them
                         before going anywhere else.
                     </p>
