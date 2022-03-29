@@ -1,8 +1,8 @@
 let buttonsLanguage = [
     {
         id: '#labelLevel',
-        'ru': `уровень`,
-        'en': `level`
+        'ru': `Уровень`,
+        'en': `Level`
 
     },
     {
@@ -56,7 +56,7 @@ let buttonsLanguage = [
     },
     {
         id: '#label-password-up',
-        'ru': `Введите пароль::`,
+        'ru': `Введите пароль:`,
         'en': `Enter password:`
     },
     {
