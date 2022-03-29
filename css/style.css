@@ -261,6 +261,9 @@ div.registration input {
     width: 60%;
     box-sizing: border-box;
 }
+input {
+    outline: none;
+}
 form {
     padding: 10px;
 }
@@ -389,11 +392,18 @@ label {
         align-items: center;
         min-width: 100vw;
     }
-    body, #sidebar {
-        font-size: 13px;
-    }
+    
     #sidebar {
         width: 100%;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 650px) {
+    body, #sidebar {
+        font-size: 13px;
     }
     .header {
         justify-content: center;
@@ -401,10 +411,7 @@ label {
     .title {
         font-size: 18px;
     }
-    
-}
 
-@media only screen and (max-width: 650px) {
     #buttons-language {
         max-width: 450px;
     }

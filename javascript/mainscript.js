@@ -71,11 +71,6 @@ let switchingFirstLevel = () => {
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeSecondLevel');
-    sessionStorage.removeItem('codeThirdLevel');
-    sessionStorage.removeItem('codeFourthLevel');
-    sessionStorage.removeItem('codeFifthLevel');
-    sessionStorage.removeItem('codeSixthLevel');
-    sessionStorage.removeItem('codeSeventhLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeFirstLevel');
     scrollSecondLevelOver.classList.add('hidden');
     scrollSecondLevelUnder.classList.add('hidden');
@@ -422,9 +417,15 @@ if (counter == 4) {
                 amet: 'Ipsum sed vitae consectetur du',
                 "cursus lacinia sed": 'Leo, dui habitasse velit in am'
             };${sessionStorage.getItem('codeFourthLevel')}`;
-        buttonNext.classList.remove('disabled');
+        
     }, 200);
     switchingFourthLevel();
+}
+let reg4 = /alert\s*\(\s*secretObject.amet\s*\)/;
+let valueInput4 = sessionStorage.getItem('codeFourthLevel');
+
+if (reg4.test(valueInput4)) {
+    buttonNext.classList.remove('disabled');
 }
 
 if (counter == 5) {
@@ -485,10 +486,20 @@ if (counter == 8) {
                 augue: 'Ut. Est. Dapibus in sed morbi tortor, vita',
                 ornare: 'Dictum morbi et. Aenean aenean sed vi',
             };${sessionStorage.getItem('codeEighthLevel')}`;
-        buttonNext.classList.remove('disabled');
+        
     }, 200);
     switchingEighthLevel();
 }
+
+let reg8 = /alert\s*\(\s*(['"])pellentesque\1\s+in\s+secretObject\s*\)/;
+let valueInput8 = sessionStorage.getItem('codeEighthLevel');
+
+if (reg8.test(valueInput8)) {
+    buttonNext.classList.remove('disabled');
+}
+
+let reg9 = /console.log\s*\(\s*key\s*\)/;
+let valueInput9 = sessionStorage.getItem('codeNinthLevel');
 
 if (counter == 9) {
     setTimeout(()=>{
@@ -501,19 +512,28 @@ if (counter == 9) {
                 augue: 'Ut. Est. Dapibus in sed morbi tortor, vita',
                 ornare: 'Dictum morbi et. Aenean aenean sed vi',
             };
-            let ctxUnrolledScroll = document.getElementById('layer-unrolled-scroll-ninth-level').getContext('2d');
-                ctxUnrolledScroll.font = "16px Fredoka One";
-                let x = 360;
-                let y = 110;
-            for (var key in secretObject) {
-                ${sessionStorage.getItem('codeNinthLevel')}
-                ctxUnrolledScroll.fillText(key, x-=1, y+=15);
-                };
+                
+                console.log(valueInput9);
+                if (reg9.test(valueInput9)) {
+                    let ctxUnrolledScroll = document.getElementById('layer-unrolled-scroll-ninth-level').getContext('2d');
+                    ctxUnrolledScroll.font = "16px Fredoka One";
+                    let x = 360;
+                    let y = 110;
+                for (var key in secretObject) {
+                    ${sessionStorage.getItem('codeNinthLevel')}
+                    ctxUnrolledScroll.fillText(key, x-=1, y+=15);
+                    };
+                }
             `;
-        buttonNext.classList.remove('disabled');
+       
     }, 200);
     switchingNinthLevel();
 }
+
+if (reg9.test(valueInput9)) {
+    buttonNext.classList.remove('disabled');
+}
+
 
 reserveEntrance = secretObject;
 
