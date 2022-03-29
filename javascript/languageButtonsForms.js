@@ -91,8 +91,8 @@ let buttonsLanguage = [
     },
     {
         id: '#labelFooter',
-        'ru': `Игра <span translate="no">HARRY POTTER AND THE SECRET OBJECT</span> создана Кохновичем Станиславом, в качестве выпускного проекта по курсу <span translate="no">JavaScript</span>, 2022 год.`,
-        'en': `The game <span translate="no">HARRY POTTER AND THE SECRET OBJECT</span> was created by Stanislau Kakhnovich as a graduation project for the <span translate="no">JavaScript</span> course, 2022.`
+        'ru': `Игра HARRY POTTER AND THE SECRET OBJECT создана Станиславом Кохновичем, в качестве выпускного проекта по курсу JavaScript, 2022 год.`,
+        'en': `The game HARRY POTTER AND THE SECRET OBJECT was created by Stanislau Kakhnovich as a graduation project for the JavaScript course, 2022.`
     },
     {
         id: '#error1',
