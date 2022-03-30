@@ -644,9 +644,18 @@ if (counter == 14) {
             };
         reserveEntrance = secretObject;
             ${sessionStorage.getItem('codeFourteenthLevel')}`;
-        buttonNext.classList.remove('disabled');
     }, 200);
     switchingFourteenthLevel();
+}
+
+let reg14_1 = /alert\s*\(\s*reserveObject\s*\=\=\s*secretObject\s*\)/;
+let valueInput14_1 = sessionStorage.getItem('codeFourteenthLevel');
+
+let reg14_2 = /alert\s*\(\s*reserveEntrance\s*\=\=\s*secretObject\s*\)/;
+let valueInput14_2 = sessionStorage.getItem('codeFourteenthLevel');
+
+if (reg14_1.test(valueInput14_1) || reg14_2.test(valueInput14_2)) {
+    buttonNext.classList.remove('disabled');
 }
 
 if (counter == 15) {

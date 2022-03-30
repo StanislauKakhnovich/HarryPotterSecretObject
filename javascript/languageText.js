@@ -57,9 +57,6 @@ let levels = [
                         как показано в одном из примеров выше. Здесь и далее надо использовать <code class="help play">var</code> при объявлении переменных. 
                     </p>
                     <p>
-                    Также, если после ввода правильного кода ничего не происходит, возможно возник баг, просто переключитесь прокрутчиком уровня, который находится над текстом.
-                    </p>
-                    <p>
                         После написания кода нажмите Enter.
                     </p>
                     `,
@@ -81,9 +78,6 @@ let levels = [
                         a secret vault in which scrolls with forbidden spells will be stored. Help Harry Potter create
                         the scroll vault, which will be our object. Declare a <code class="help play">secretObject</code> variable and assign it a reference to an empty object,
                         as shown in one of the examples above. Here and below, <code class="help play">var</code> should be used when declaring variables.
-                    </p>
-                    <p>
-                    Also, if nothing happens after entering the correct code, there may have been a bug, just switch the level scroller that is above the text.
                     </p>
                     <p>
                         After writing the code, press Enter.
@@ -195,8 +189,9 @@ let levels = [
                     <br>
                         age: 30,
                     <br>
-                        "likes birds": true  // имя свойства из нескольких слов должно быть в кавычках
+                        "likes birds": true </code> // имя свойства из нескольких слов должно быть в кавычках
                     <br>
+                    <code class="help">
                     };
                     </code>
                     </p>
@@ -218,8 +213,9 @@ let levels = [
                     <br>
                         age: 30
                     <br>
-                        "likes birds": true // multi-word property name must be in quotes
+                        "likes birds": true</code> // multi-word property name must be in quotes
                     <br>
+                    <code class="help">
                     };
                     </code>
                     </p>

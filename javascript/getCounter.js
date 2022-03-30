@@ -1,7 +1,7 @@
 let errorSignIn = document.querySelector('#error8');
 
 const getCounter = (event) => {
-    
+    preloaderIn()
     let inputPassword = document.querySelector('#password-in').value; 
     let inputEmail = document.querySelector('#e-mail-in').value;
 
