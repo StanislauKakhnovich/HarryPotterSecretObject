@@ -65,7 +65,7 @@ let switchingFirstLevel = () => {
     levelScroller.classList.remove('hidden');
     registrationField.classList.add('hidden');
     editor.classList.remove('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     leftEntrance.classList.add('hidden');
     repository.classList.add('hidden');
     buttonNext.classList.add('disabled');
@@ -89,7 +89,7 @@ let switchingSecondLevel = () => {
     scrollSecondLevelUnder.classList.add('hidden');
     scrollThirdLevelOver.classList.add('hidden');
     scrollThirdLevelUnder.classList.add('hidden');
-    enteredText.style.height = '48px';
+    enteredText.style.height = '72px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeFirstLevel');
@@ -105,7 +105,7 @@ let switchingThirdLevel = () => {
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelOver.classList.remove('hidden');
     scrollThirdLevelUnder.classList.add('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeSecondLevel');
@@ -122,7 +122,7 @@ let switchingFourthLevel = () => {
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelOver.classList.add('hidden');
     scrollFifthLevelUnder.classList.add('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeThirdLevel');
@@ -138,7 +138,7 @@ let switchingFifthLevel = () => {
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelOver.classList.remove('hidden');
     scrollFifthLevelUnder.classList.add('hidden');
-    enteredText.style.height = '144px';
+    enteredText.style.height = '168px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeFourthLevel');
@@ -155,7 +155,7 @@ let switchingSixthLevel = () => {
     scrollFifthLevelOver.classList.add('hidden');
     scrollFifthLevelUnder.classList.remove('hidden');
     scrollSeventhLevelOver.classList.add('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeFifthLevel');
@@ -171,7 +171,7 @@ let switchingSeventhLevel = () => {
     scrollThirdLevelUnder.classList.add('hidden');
     scrollFifthLevelUnder.classList.remove('hidden');
     scrollSeventhLevelOver.classList.remove('hidden');
-    enteredText.style.height = '48px';
+    enteredText.style.height = '72px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeSixthLevel');
@@ -224,7 +224,7 @@ let switchingTenthLevel = () => {
     scrollNinthLevelUnrolled.classList.add('hidden');
     scrollEleventhLevelOver.classList.add('hidden');
     scrollEleventhLevelUnder.classList.add('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeNinthLevel');
@@ -286,7 +286,7 @@ let switchingThirteenthLevel = () => {
     reservePlace.classList.remove('hidden');
     reserveRepository.classList.remove('hidden');
     reserveScrolls.classList.add('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeTwelfthLevel');
@@ -307,7 +307,7 @@ let switchingFourteenthLevel = () => {
     reservePlace.classList.remove('hidden');
     reserveRepository.classList.remove('hidden');
     reserveScrolls.classList.remove('hidden');
-    enteredText.style.height = '24px';
+    enteredText.style.height = '48px';
     buttonNext.classList.add('disabled');
     arrowLeft.classList.remove('disabled');
     sessionStorage.removeItem('codeThirteenthLevel');
@@ -867,61 +867,83 @@ buttonNext.addEventListener('click', () => {
 });
 
 arrowRight.addEventListener('click', () => {
-    counter++ ;
+
+    if (counter < 16) counter++ ;
+    
+    sessionStorage.setItem('testCounter', counter);
+
     if (counter == 1){
+        
         switchingFirstLevel();
     }
     if(counter == 2){
+        
         switchingSecondLevel(); 
     }
     if(counter == 3){
+        
         switchingThirdLevel(); 
     }
     if(counter == 4){
+        
         switchingFourthLevel(); 
     }
     if(counter == 5){
+        
         switchingFifthLevel(); 
     }
     if(counter == 6){
+        
         switchingSixthLevel(); 
     }
     if(counter == 7){
+        
         switchingSeventhLevel(); 
     }
     if(counter == 8){
+        
         switchingEighthLevel(); 
     }
     if(counter == 9){
+        
         switchingNinthLevel(); 
     }
     if(counter == 10){
+        
         switchingTenthLevel(); 
     }
     if(counter == 11){
+        
         switchingEleventhLevel(); 
     }
     if(counter == 12){
+        
         switchingTwelfthLevel(); 
     }
     if(counter == 13){
+        
         switchingThirteenthLevel();
     }
     if(counter == 14){
+        
         switchingFourteenthLevel();
     }
     if(counter == 15){
+        
         switchingFifteenthLevel();
     }
     if(counter == 16){
+       
         switchingSixteenthLevel();
     }
 });
 
 arrowLeft.addEventListener('click', () => {
     counter-- ;
+    sessionStorage.setItem('testCounter', counter);
     
     if(counter == 0){
+        
         switchingZeroLevel(); 
     }
     

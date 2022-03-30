@@ -713,9 +713,9 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Обратите внимание, что все конструкции «for» позволяют нам объявлять переменную внутри цикла, как, например, <code class="help">var key здесь.
+                    Обратите внимание, что все конструкции «for» позволяют нам объявлять переменную внутри цикла, как, например, <code class="help">var key</code> здесь.
                     <br>
-                    Кроме того, мы могли бы использовать другое имя переменной. Например, часто используется вариант <code class="help">"for (var prop in obj)".
+                    Кроме того, мы могли бы использовать другое имя переменной. Например, часто используется вариант <code class="help">"for (var prop in obj)"</code>.
                     </P>
                     <p>
                     Также обратите внимание на выражение  <code class="help">alert(user[key])</code>. Переменная <code class="help">key</code> взята в квадратные скобки, так как это переменная а не конкретное имя свойства. 
@@ -769,15 +769,15 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Note that all "for" constructs allow us to declare a variable inside the loop, like <code class="help">var key here.
+                    Note that all "for" constructs allow us to declare a variable inside the loop, like <code class="help">var key</code> here.
                     <br>
-                    Also, we could use a different variable name. For example, <code class="help">"for (var prop in obj)" is often used.
+                    Also, we could use a different variable name. For example, <code class="help">"for (var prop in obj)"</code> is often used.
                     </P>
                     <p>
                     Also note the expression <code class="help">alert(user[key])</code>. The variable <code class="help">key</code> is enclosed in square brackets because it is a variable and not a specific property name.
                     In this situation, dot notation will not work.
                     </p>
-                    Let's refer to our object <code class="help play">secretObject</code> and display in <code class="help play">console.log</code> the names of our scrolls using the <code class= operator "help play">for..in</code>.
+                    Let's refer to our object <code class="help play">secretObject</code> and display in <code class="help play">console.log</code> the names of our scrolls using the <code class="help play">for..in</code>.
                     <p>
                     After writing the code, press Enter.
                     </p>

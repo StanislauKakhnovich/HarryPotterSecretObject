@@ -402,9 +402,14 @@ label {
 }
 
 @media only screen and (max-width: 650px) {
-    body, #sidebar {
+    body, 
+    #sidebar,
+    #code,
+    #editor,
+    pre {
         font-size: 13px;
     }
+
     .header {
         justify-content: center;
     }
