@@ -75,8 +75,8 @@ let levels = [
                         Such a declaration is called an object literal or literal notation.
                     </p>
                     <p>Harry Potter grew up to work for the Ministry of Magic. He was assigned to create an underground
-                        a secret vault in which scrolls with forbidden spells will be stored. Help Harry Potter create
-                        the scroll vault, which will be our object. Declare a <code class="help play">secretObject</code> variable and assign it a reference to an empty object,
+                        a secret repository in which scrolls with forbidden spells will be stored. Help Harry Potter create
+                        the scroll repository, which will be our object. Declare a <code class="help play">secretObject</code> variable and assign it a reference to an empty object,
                         as shown in one of the examples above. Here and below, <code class="help play">var</code> should be used when declaring variables.
                     </p>
                     <p>
@@ -155,7 +155,7 @@ let levels = [
                         We can say that our user object is a box with two folders labeled "name" and "age".
                     </p>
                     <p>
-                    In the case of Harry Potter, our object will be an underground storage. The properties of this object will be scrolls
+                    In the case of Harry Potter, our object will be an underground repository. The properties of this object will be scrolls
                     with spells. The names of the keys will be the names of the spells. Property values ​​are spell texts.
                     </p>
                     <p>
@@ -165,7 +165,7 @@ let levels = [
                     <br>
                     The second scroll is called: <code class="help play">amet</code> and contains the text: <code class="help play">'Ipsum sed vitae consectetur du'</code>.
                     <p>
-                    Help Harry Potter rewrite these two scrolls into new scrolls in the underground storage (the name of the scrolls will be the name of the properties, the text will be the meaning of the names).
+                    Help Harry Potter rewrite these two scrolls into new scrolls in the underground repository (the name of the scrolls will be the name of the properties, the text will be the meaning of the names).
                     <p>
                     After writing the code, press Enter.
                     </p>
@@ -221,7 +221,7 @@ let levels = [
                     </p>
                     <p>
                     Harry Potter was sent a scroll with a three-word title: <code class="help play">"cursus lacinia sed"</code>. Here is the contents of this scroll: <code class="help play">'Leo, dui habitasse velit in am'</code>.
-                    Help him rewrite this scroll in the vault.
+                    Help him rewrite this scroll in the repository.
                     <p>
                     After writing the code, press Enter.
                     </p>
@@ -256,7 +256,7 @@ let levels = [
                     `,
             'en': `
                     <p>
-                    We can add new scrolls to our storage (object) at any time, delete scrolls or read the contents of any scroll.
+                    We can add new scrolls to our repository (object) at any time, delete scrolls or read the contents of any scroll.
                     To access properties, use the "dot" notation:
                     </p>
                     <p>
@@ -336,7 +336,7 @@ let levels = [
                     The third scroll is called: <code class="help play">augue</code> and contains the text: <code class="help play">'Ut. Est. Dapibus in sed morbi tortor, vita'</code>.
                     </p>
                     <p>
-                    Help Harry Potter overwrite these scrolls in the vault using dot notation.
+                    Help Harry Potter overwrite these scrolls in the repository using dot notation.
                     We remind you that we previously wrote the reference to the object into the <code class="help play">secretObject</code> variable.
                     <p>
                     After writing the code, press Enter.
@@ -429,7 +429,7 @@ let levels = [
                     Now everything is all right. Note that the string in square brackets is enclosed in quotation marks (any type of quotation mark will do).
                     </p>
                     <p>
-                    The Ministry of Magic instructed Harry Potter to remove the scroll titled <code class="help play">"cursus lacinia sed"</code>. Let's help remove this scroll from our <code class="help play">secretObject</code> storage.
+                    The Ministry of Magic instructed Harry Potter to remove the scroll titled <code class="help play">"cursus lacinia sed"</code>. Let's help remove this scroll from our <code class="help play">secretObject</code> repository.
                     </p>
                     <p>
                     After writing the code, press Enter.
@@ -652,8 +652,8 @@ let levels = [
                     alert(key in user); // true</code>, the property name was taken from the variable <code class="help">key</code>
                     </p>
                     <p>
-                    Bureaucrats from the Ministry of Magic are confused about which scrolls are stored in <code class="help play">secretObject</code>. They sent a request to Harry Potter asking if there was a scroll called <code class="help play">pellentesque</code> in the vault.
-                    Help Harry Potter check if this scroll is in the vault with <code class="help play">"in"</code>. Output the result in <code class="help play">alert</code>.
+                    Bureaucrats from the Ministry of Magic are confused about which scrolls are stored in <code class="help play">secretObject</code>. They sent a request to Harry Potter asking if there was a scroll called <code class="help play">pellentesque</code> in the repository.
+                    Help Harry Potter check if this scroll is in the repository with <code class="help play">"in"</code>. Output the result in <code class="help play">alert</code>.
                     </p>
                     <p>
                     After writing the code, press Enter.
@@ -876,7 +876,7 @@ for (var key in secretObject) {`,
                     </p>
                     <p>
                     Harry Potter was visited by an inspection from the Ministry of Magic. Based on the results of the inspection, he was issued an order,
-                    for security reasons, create another entrance to the underground storage.
+                    for security reasons, create another entrance to the underground repository.
                     </p>
                     <p>
                     Let's help Harry Potter do it.
@@ -917,7 +917,7 @@ for (var key in secretObject) {`,
                 `,
             'en': `
                     <p>
-                    As you can see from the picture, we now have two variables (our two inputs), each containing a reference to the same object (our underground storage).
+                    As you can see from the picture, we now have two variables (our two inputs), each containing a reference to the same object (our underground repository).
                     We can use any of the variables to access the store and modify its contents.
                     </p>
                     <p>
@@ -931,7 +931,7 @@ for (var key in secretObject) {`,
                     The third scroll is called: <code class="help play">justo</code> and contains the text: <code class="help play">'Integer sapien consectetur sodales int'</code>.
                     </p>
                     <p>
-                    Help Harry Potter overwrite these scrolls in storage using the second entry <code class="help play">reserveEntrance</code>.
+                    Help Harry Potter overwrite these scrolls in repository using the second entry <code class="help play">reserveEntrance</code>.
                     </p>
                     <p>
                     After writing the code, press Enter.
@@ -959,8 +959,8 @@ for (var key in secretObject) {`,
                 `,
             'en': `
                     <p>
-                    Disturbing news came from the Ministry of Magic. Voldemort found out where our secret vault is located.
-                    At any moment, he and his followers may attack our vault. If he gets his hands on scrolls with secret spells, then no one can stop him.
+                    Disturbing news came from the Ministry of Magic. Voldemort found out where our secret repository is located.
+                    At any moment, he and his followers may attack our repository. If he gets his hands on scrolls with secret spells, then no one can stop him.
                     </p>
                     <p>
                     Help Harry Potter create a new empty object elsewhere.
@@ -1196,7 +1196,7 @@ for (var key in secretObject) {`,
                 `,
             'en': `
                     <p>
-                    You helped Harry Potter create a new vault and overwrite the scrolls there. Now we need
+                    You helped Harry Potter create a new repository and overwrite the scrolls there. Now we need
                     destroy the old repository. To erase an object, you need a variable that refers to the object
                     assign <code class="help">null</code>.
                     <br>
