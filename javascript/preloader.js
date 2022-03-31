@@ -23,7 +23,7 @@ if (sessionStorage.getItem('counter') === null) {
 if (counter < 1){
     preloaderIn();
     window.addEventListener('load', ()=>{
-         setTimeout(preloaderOff, 0);
+         setTimeout(preloaderOff, 300);
     });
 }
 

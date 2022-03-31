@@ -11,9 +11,10 @@ const getCounter = (event) => {
         }
     ).then(
         data => {
-            
+            preloaderOff();
                 if (data.some(item => {return (item.password  == inputPassword && item.mail  == inputEmail)})) {
                     data.forEach(elem => {
+                        
                         if (elem.password == inputPassword) {
                             sessionStorage.setItem('userId', elem.id);
                             console.log(sessionStorage.getItem('userId'));
@@ -23,6 +24,7 @@ const getCounter = (event) => {
                             sessionStorage.setItem('mail', elem.mail);
                             sessionStorage.setItem('password', elem.password);
                             sessionStorage.setItem('counter', elem.counter);
+                            
                             location.reload(); 
                         }  
                     })

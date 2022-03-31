@@ -160,6 +160,11 @@ let buttonsLanguage = [
         'en': `Enter up to 30 characters.`
     },
     {
+        id: '#error52',
+        'ru': `Введите не мене 4 символов.`,
+        'en': `Enter at least 4 characters.`
+    },
+    {
         id: '#error61',
         'ru': `Введите не более 30 символов.`,
         'en': `Enter up to 30 characters.`
@@ -173,6 +178,11 @@ let buttonsLanguage = [
         id: '#error71',
         'ru': `Введите не более 30 символов.`,
         'en': `Enter up to 30 characters.`
+    },
+    {
+        id: '#error72',
+        'ru': `Введите не мене 4 символов.`,
+        'en': `Enter at least 4 characters.`
     },
     {
         id: '#error8',
