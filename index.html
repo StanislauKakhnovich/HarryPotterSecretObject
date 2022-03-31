@@ -13,6 +13,11 @@
 </head>
 <body >
 
+    <div id="preloader" class="hidden" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+        <img class="harry-preloader" src="image/harri_potter_with_owl_on_shoulder_200.png" title="Hurry Potter">
+    </div>
+
+
     <section id="sidebar">
         <div class="header">
             <h1 class="title"><span translate="no">HARRY POTTER AND THE SECRET OBJECT</span></h1>
@@ -181,13 +186,10 @@
             <canvas class="hidden"  id="layer-animation-level" width="600" height="600"></canvas>
         </div>
     </section>
-    <div id="preloader" class="hidden" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
-        <img class="harry-preloader" src="image/harri_potter_with_owl_on_shoulder_200.png" title="Hurry Potter">
-    </div>
-
-
-
     
+
+
+<script src="javascript/preloader.js" defer></script>
 <script src="javascript/draw.js" defer></script>
 <script src="javascript/languageButtonsForms.js" defer></script>
 <script src="javascript/languageText.js" defer></script>

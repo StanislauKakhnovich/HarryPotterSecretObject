@@ -32,12 +32,6 @@ let finalAnimation = document.querySelector('#layer-animation-level');
 let buttonEntry = document.querySelector('#btn-entry');
 
 
-if (sessionStorage.getItem('counter') === null) {
-    var counter = 0;
-} else {
-    var counter = sessionStorage.getItem('counter');
-}
-
 let switchingLevel = () => {
     instruction.innerHTML = '';
     instruction.innerHTML = levels[counter].instructions[languageRender];

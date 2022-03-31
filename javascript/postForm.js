@@ -1,18 +1,3 @@
-let leftField = document.querySelector('#sidebar');
-let rightField = document.querySelector('#view');
-let preloaderHarry = document.querySelector('#preloader');
-
-let preloaderIn = () => {
-    leftField.classList.add('hidden');
-    rightField.classList.add('hidden');
-    preloaderHarry.classList.remove('hidden');
-}
-
-let preloaderOff = () => {
-    leftField.classList.remove('hidden');
-    rightField.classList.remove('hidden');
-    preloaderHarry.classList.add('hidden');
-}
 
 let userId;
 
@@ -49,7 +34,7 @@ const postForm = async () => {
         preloaderOff();
         console.log(data);
         userId = data.id;
-        sessionStorage.setItem('id', userId);
+        sessionStorage.setItem('userId', userId);
         counter = 1;
         switchingFirstLevel();
         
