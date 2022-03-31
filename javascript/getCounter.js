@@ -17,7 +17,6 @@ const getCounter = (event) => {
                         
                         if (elem.password == inputPassword) {
                             sessionStorage.setItem('userId', elem.id);
-                            console.log(sessionStorage.getItem('userId'));
                             sessionStorage.setItem('nameUser', elem.nameUser);
                             sessionStorage.setItem('country', elem.country);
                             sessionStorage.setItem('town', elem.town);

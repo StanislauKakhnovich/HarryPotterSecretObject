@@ -9,8 +9,6 @@ const postCounter = async () => {
     let mailData = sessionStorage.getItem('mail');
     let passwordData = sessionStorage.getItem('password');
 
-	console.log(userId);
-    console.log(counter);
     const settings = {
         method: 'PUT',
         headers: {

@@ -1,4 +1,3 @@
-
 let userId;
 
 const USERS_URL = 'https://play-app-hurry.herokuapp.com/api/play'
@@ -8,7 +7,6 @@ const postForm = async () => {
     preloaderIn();
     const data = {};
     const formItems = document.querySelector('.form-sign-up').elements;
-    console.log(formItems);
 
     for (let i=0; i < formItems.length - 1; i++){
         data[formItems[i].name] =  formItems[i].value;
@@ -18,7 +16,6 @@ const postForm = async () => {
     sessionStorage.setItem('counter', 1);
 
     
-
     const settings = {
         method: 'POST',
         headers: {
@@ -32,7 +29,6 @@ const postForm = async () => {
         const response = await fetch (USERS_URL, settings);
         const data = await response.json();
         preloaderOff();
-        console.log(data);
         userId = data.id;
         sessionStorage.setItem('userId', userId);
         counter = 1;
