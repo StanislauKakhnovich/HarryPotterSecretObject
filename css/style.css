@@ -284,11 +284,6 @@ label {
 #entry {
     margin-top: 20px;
 }
-/*
-.inactive {
-    opacity: 0.5;
-}
-*/
 
 #buttons-language {
     display: flex;
@@ -315,6 +310,7 @@ label {
     left: calc(50% - 30px);
     margin-top: -20px;
     margin-left: -20px;
+    z-index: 101;
   }
   #preloader:before {
     content: "";
