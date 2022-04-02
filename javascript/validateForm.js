@@ -120,18 +120,6 @@ validateEmailIn = () => {
 
  emailIn.addEventListener('blur', validateEmailIn);
 
- minSizePasswordIn = () => {
-    if (passwordIn.value.length < 4){
-        passwordIn.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'inline-block';
-        passwordIn.focus();
-        return false;
-    } else {
-        passwordUp.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
-        return true;
-    }
-}
-
-passwordIn.addEventListener('blur', minSizePasswordIn);
 
  formSignIn.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -141,7 +129,7 @@ passwordIn.addEventListener('blur', minSizePasswordIn);
     arrInputValue.push(elem.value.trim());
     })
 
-    if ( arrInputValue.every((elem) => {return (elem != '' && elem.length <= 30)})  && validateEmailIn() && minSizePasswordIn()) {
+    if ( arrInputValue.every((elem) => {return (elem != '' && elem.length <= 30)})  && validateEmailIn()) {
         getCounter();
     }
     arrInput.forEach((elem) => {

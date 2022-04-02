@@ -71,7 +71,7 @@ let buttonsLanguage = [
     },
     {
         id: '#label-password-in',
-        'ru': `Введите пароль::`,
+        'ru': `Введите пароль:`,
         'en': `Enter password:`
     },
     {
