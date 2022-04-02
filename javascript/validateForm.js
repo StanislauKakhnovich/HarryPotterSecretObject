@@ -11,7 +11,6 @@ let passwordIn = document.querySelector('#password-in');
 let emptyField = function(){
     if(this.value.trim() == '') {
        this.nextElementSibling.style.display = 'inline-block';
-       this.focus();
        } else {
        this.nextElementSibling.style.display = 'none';
        }  
@@ -20,7 +19,6 @@ let emptyField = function(){
 let maxSizeString = function() {
     if(this.value.length > 30) {
         this.nextElementSibling.nextElementSibling.style.display = 'inline-block';
-        this.focus();
     } else {
         this.nextElementSibling.nextElementSibling.style.display = 'none';
     }
@@ -53,7 +51,6 @@ validateEmailUp = () => {
     let address = emailUp.value;
     if(reg.test(address) == false) {
         emailUp.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'inline-block';
-        emailUp.focus();
         return false;
     } else {
         emailUp.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
@@ -66,7 +63,6 @@ emailUp.addEventListener('blur', validateEmailUp);
 minSizePasswordUp = () => {
     if (passwordUp.value.length < 4){
         passwordUp.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'inline-block';
-        passwordUp.focus();
         return false;
     } else {
         passwordUp.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
@@ -110,7 +106,6 @@ validateEmailIn = () => {
     let address = emailIn.value;
     if(reg.test(address) == false) {
         emailIn.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'inline-block';
-        emailUp.focus();
         return false;
     } else {
         emailIn.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
