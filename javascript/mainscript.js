@@ -706,98 +706,100 @@ if (reserveEntrance === null || typeof reserveEntrance !== 'object') {
     }, 1800);
 }
 
-enteredText.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' && counter == 1) {
+let buttonEnter = document.querySelector('#enter')
+
+buttonEnter.addEventListener('click', (event) => {
+    if (counter == 1) {
         let code = enteredText.value;
         sessionStorage.setItem('codeFirstLevel', code);
         sessionStorage.setItem('counter', 1);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 2) {
+    if (counter == 2) {
         let code = enteredText.value;
         sessionStorage.setItem('codeSecondLevel', code);
         sessionStorage.setItem('counter', 2);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 3) {
+    if (counter == 3) {
         let code = enteredText.value;
         sessionStorage.setItem('codeThirdLevel', code);
         sessionStorage.setItem('counter', 3);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 4) {
+    if (counter == 4) {
         let code = enteredText.value;
         sessionStorage.setItem('codeFourthLevel', code);
         sessionStorage.setItem('counter', 4);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 5) {
+    if (counter == 5) {
         let code = enteredText.value;
         sessionStorage.setItem('codeFifthLevel', code);
         sessionStorage.setItem('counter', 5);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 6) {
+    if (counter == 6) {
         let code = enteredText.value;
         sessionStorage.setItem('codeSixthLevel', code);
         sessionStorage.setItem('counter', 6);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 7) {
+    if (counter == 7) {
         let code = enteredText.value;
         sessionStorage.setItem('codeSeventhLevel', code);
         sessionStorage.setItem('counter', 7);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 8) {
+    if (counter == 8) {
         let code = enteredText.value;
         sessionStorage.setItem('codeEighthLevel', code);
         sessionStorage.setItem('counter', 8);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 9) {
+    if (counter == 9) {
         let code = enteredText.value;
         sessionStorage.setItem('codeNinthLevel', code);
         sessionStorage.setItem('counter', 9);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 10) {
+    if (counter == 10) {
         let code = enteredText.value;
         sessionStorage.setItem('codeTenthLevel', code);
         sessionStorage.setItem('counter', 10);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 11) {
+    if (counter == 11) {
         let code = enteredText.value;
         sessionStorage.setItem('codeEleventhLevel', code);
         sessionStorage.setItem('counter', 11);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 12) {
+    if (counter == 12) {
         let code = enteredText.value;
         sessionStorage.setItem('codeTwelfthLevel', code);
         sessionStorage.setItem('counter', 12);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 13) {
+    if (counter == 13) {
         let code = enteredText.value;
         sessionStorage.setItem('codeThirteenthLevel', code);
         sessionStorage.setItem('counter', 13);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 14) {
+    if (counter == 14) {
         let code = enteredText.value;
         sessionStorage.setItem('codeFourteenthLevel', code);
         sessionStorage.setItem('counter', 14);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 15) {
+    if (counter == 15) {
         let code = enteredText.value;
         sessionStorage.setItem('codeFifteenthLevel', code);
         sessionStorage.setItem('counter', 15);
         location.reload(); 
     }
-    if (event.key === 'Enter' && counter == 16) {
+    if (counter == 16) {
         let code = enteredText.value;
         sessionStorage.setItem('codeSixteenthLevel', code);
         sessionStorage.setItem('counter', 16);

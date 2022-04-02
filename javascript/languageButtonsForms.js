@@ -80,6 +80,11 @@ let buttonsLanguage = [
         'en': `Sign in`
     },
     {
+        id: '#enter',
+        'ru': `Введите код`,
+        'en': `Enter code`
+    },
+    {
         id: '#next',
         'ru': `Следующий`,
         'en': `Next`

@@ -116,7 +116,7 @@ body {
     color: #777;
 }
 #css {
-    height: 260px;
+    height: 320px;
     position: relative;
     padding: 10px 10px 10px 40px;
     background-color: #e0e0e0;
@@ -179,6 +179,14 @@ button {
     bottom: 1em;
     padding-top: 0.3em;
 }
+#enter {
+    background-color: red;
+    position: absolute;
+    right: 1em;
+    bottom: 5em;
+    padding-top: 0.3em;
+}
+
 #next.disabled {
     opacity: 0.5;
 }

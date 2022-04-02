@@ -57,7 +57,7 @@ let levels = [
                         как показано в одном из примеров выше. Здесь и далее надо использовать <code class="help play">var</code> при объявлении переменных. 
                     </p>
                     <p>
-                        После написания кода нажмите Enter.
+                        После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -80,7 +80,7 @@ let levels = [
                         as shown in one of the examples above. Here and below, <code class="help play">var</code> should be used when declaring variables.
                     </p>
                     <p>
-                        After writing the code, press Enter.
+                        After writing the code, click the "Enter code" button.
                     </p>
             `
         },
@@ -127,7 +127,7 @@ let levels = [
                     <p>
                     Помогите Гарри Поттеру переписать эти два свитка в новые свитки в подземном хранилище (наименование свитков будет являться именем свойств, текст - значением имен). 
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -167,7 +167,7 @@ let levels = [
                     <p>
                     Help Harry Potter rewrite these two scrolls into new scrolls in the underground repository (the name of the scrolls will be the name of the properties, the text will be the meaning of the names).
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
             `
             },
@@ -199,7 +199,7 @@ let levels = [
                     Гарри Поттеру прислали свиток с названием состоящим из трех слов: <code class="help play">"cursus lacinia sed"</code>. Вот содержание этого свитка: <code class="help play">'Leo, dui habitasse velit in am'</code>.
                     Помогите ему переписать этот свиток в хранилище. 
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -223,7 +223,7 @@ let levels = [
                     Harry Potter was sent a scroll with a three-word title: <code class="help play">"cursus lacinia sed"</code>. Here is the contents of this scroll: <code class="help play">'Leo, dui habitasse velit in am'</code>.
                     Help him rewrite this scroll in the repository.
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                         `
         },
@@ -251,7 +251,7 @@ let levels = [
                     Министерство магии запросило у Гарри Поттера прочитать содержимое свитка <code class="help play">amet</code>. Давайте выведем в <code class="help play">alert</code> содержимое свитка <code class="help play">amet</code>. 
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -269,7 +269,7 @@ let levels = [
                     The Ministry of Magic asked Harry Potter to read the contents of the <code class="help play">amet</code> scroll. Let's display in <code class="help play">alert</code> the contents of the <code class="help play">amet</code> scroll.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -310,7 +310,7 @@ let levels = [
                     Помогите Гарри Поттеру перезаписать эти свитки в хранилище используя запись через точку.
                     Напоминаем, что ссылку на объект мы ранее  записали в переменную <code class="help play">secretObject</code>. 
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -339,7 +339,7 @@ let levels = [
                     Help Harry Potter overwrite these scrolls in the repository using dot notation.
                     We remind you that we previously wrote the reference to the object into the <code class="help play">secretObject</code> variable.
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -389,7 +389,7 @@ let levels = [
                     Министерство магии поручило Гарри Поттеру удалить свиток под названием <code class="help play">"cursus lacinia sed"</code>. Давайте поможем удалить этот свиток из нашего хранилища <code class="help play">secretObject</code>. 
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -432,7 +432,7 @@ let levels = [
                     The Ministry of Magic instructed Harry Potter to remove the scroll titled <code class="help play">"cursus lacinia sed"</code>. Let's help remove this scroll from our <code class="help play">secretObject</code> repository.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -500,7 +500,7 @@ let levels = [
                     используя квадратные скобки и переменную <code class="help play">nameScroll</code>.
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -561,7 +561,7 @@ let levels = [
                     using square brackets and <code class="help play">nameScroll</code> variable.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -612,7 +612,7 @@ let levels = [
                     Помогите Гарри Поттеру проверить наличие данного свитка в хранилище с помощью <code class="help play">"in"</code>. Результат выведите в <code class="help play">alert</code>.
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                 `,
             'en': `
@@ -656,7 +656,7 @@ let levels = [
                     Help Harry Potter check if this scroll is in the repository with <code class="help play">"in"</code>. Output the result in <code class="help play">alert</code>.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -719,7 +719,7 @@ let levels = [
                     </p>
                     Давайте, обратимся к нашему объекту <code class="help play">secretObject</code> и выведем в <code class="help play">console.log</code> названия наших свитков, с помощью оператора <code class="help play">for..in</code>.
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -775,7 +775,7 @@ let levels = [
                     </p>
                     Let's refer to our object <code class="help play">secretObject</code> and display in <code class="help play">console.log</code> the names of our scrolls using the <code class="help play">for..in</code>.
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -833,7 +833,7 @@ for (var key in secretObject) {`,
                     Для этого нам надо объявить новую переменную <code class="help play">var reserveEntrance</code> и присвоить ей ссылку на <code class="help play">secretObject</code>, как показано в примере выше.
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -883,7 +883,7 @@ for (var key in secretObject) {`,
                     To do this, we need to declare a new variable <code class="help play">var reserveEntrance</code> and assign it a reference to <code class="help play">secretObject</code> as shown in the example above.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -934,7 +934,7 @@ for (var key in secretObject) {`,
                     Help Harry Potter overwrite these scrolls in repository using the second entry <code class="help play">reserveEntrance</code>.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -954,7 +954,7 @@ for (var key in secretObject) {`,
                     Объявите переменную <code class="help play">reserveObject</code> и присвойте ей ссылку на пустой объект. 
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                 `,
             'en': `
@@ -967,7 +967,7 @@ for (var key in secretObject) {`,
                     Declare a <code class="help play">reserveObject</code> variable and give it a reference to an empty object.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -1024,7 +1024,7 @@ for (var key in secretObject) {`,
                     Помогите Гарри Поттеру скопировать свитки из старого объекта <code class="help play">secretObject</code> в новый объект <code class="help play">reserveObject</code>.
                     </P>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -1074,7 +1074,7 @@ for (var key in secretObject) {`,
                     Help Harry Potter copy the scrolls from the old <code class="help play">secretObject</code> object to the new <code class="help play">reserveObject</code> object.
                     </P>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -1122,7 +1122,7 @@ for (var key in secretObject) {`,
                     Результаты сравнения выведите в <code class="help play">alert</code>.
                     </P>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -1163,7 +1163,7 @@ for (var key in secretObject) {`,
                     Display the comparison results in <code class="help play">alert</code>.
                     </P>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -1191,7 +1191,7 @@ for (var key in secretObject) {`,
                     Присвойте переменной <code class="help play">secretObject</code> значение <code class="help play">null</code>.
                     </p>
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                 `,
             'en': `
@@ -1212,7 +1212,7 @@ for (var key in secretObject) {`,
                     Set the variable <code class="help play">secretObject</code> to <code class="help play">null</code>.
                     </p>
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                     `
             },
@@ -1232,7 +1232,7 @@ for (var key in secretObject) {`,
                     <p>
                     Присвойте переменной <code class="help play">reserveEntrance</code> значение <code class="help play">null</code> и наблюдайте за тем, что произойдет с хранилищем.
                     <p>
-                    После написания кода нажмите Enter.
+                    После написания кода нажмите кнопку "Введите код".
                     </p>
                     `,
             'en': `
@@ -1245,7 +1245,7 @@ for (var key in secretObject) {`,
                     <p>
                     Set the <code class="help play">reserveEntrance</code> variable to <code class="help play">null</code> and watch what happens to the store.
                     <p>
-                    After writing the code, press Enter.
+                    After writing the code, click the "Enter code" button.
                     </p>
                 `
             },
