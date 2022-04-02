@@ -30,6 +30,7 @@ let reserveRepository = document.querySelector('#layer-reserve-repository-twelft
 let reserveScrolls = document.querySelector('#layer-reserve-scrolls-thirteenth-level');
 let finalAnimation = document.querySelector('#layer-animation-level');
 let buttonEntry = document.querySelector('#btn-entry');
+let board = document.querySelector('#board');
 
 
 let switchingLevel = () => {
@@ -357,15 +358,25 @@ if (counter == 0) {
     switchingZeroLevel();
 }
 
+let timeInterval = 500;
+
 if (counter == 1) {
     controlCode.innerHTML = sessionStorage.getItem('codeFirstLevel');
     switchingFirstLevel();
 }
 if (typeof secretObject === 'object') {
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        leftEntrance.classList.remove('hidden');
+        repository.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
+
+setTimeout(()=>{
+
+}, timeInterval);
 
 var secretObject = {
     lectus: '',
@@ -388,8 +399,12 @@ if (counter == 2) {
     switchingSecondLevel();
 }
 if (secretObject.lectus === 'Tortor, urna hac libero, sed o' && secretObject.amet === 'Ipsum sed vitae consectetur du') {
-    scrollSecondLevelUnder.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        scrollSecondLevelUnder.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 if (counter == 3) {
@@ -398,8 +413,12 @@ if (counter == 3) {
     switchingThirdLevel();
 }
 if (secretObject["cursus lacinia sed"] === 'Leo, dui habitasse velit in am') {
-    scrollThirdLevelUnder.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        scrollThirdLevelUnder.classList.remove('hidden');
+         buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 
@@ -419,7 +438,8 @@ let reg4 = /alert\s*\(\s*secretObject.amet\s*\)/;
 let valueInput4 = sessionStorage.getItem('codeFourthLevel');
 
 if (reg4.test(valueInput4)) {
-    buttonNext.classList.remove('disabled');
+     buttonNext.classList.remove('disabled');
+    
 }
 
 if (counter == 5) {
@@ -431,8 +451,12 @@ if (counter == 5) {
     switchingFifthLevel();
 }
 if (secretObject.consectetur === 'Accumsan et. Sed non sed orci, nisi sed' && secretObject.arcu === 'Mattis id dictum. Justo nulla fauci' && secretObject.augue === 'Ut. Est. Dapibus in sed morbi tortor, vita') {
-    scrollFifthLevelUnder.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        scrollFifthLevelUnder.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 if (counter == 6) {
@@ -449,8 +473,12 @@ if (counter == 6) {
     switchingSixthLevel();
 }
 if ("cursus lacinia sed" in secretObject === false) {
-    scrollThirdLevelUnder.classList.add('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        scrollThirdLevelUnder.classList.add('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 if (counter == 7) {
@@ -465,8 +493,12 @@ if (counter == 7) {
     switchingSeventhLevel();
 }
 if (secretObject.ornare === 'Dictum morbi et. Aenean aenean sed vi') {
-    scrollThirdLevelUnder.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        scrollThirdLevelUnder.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 if (counter == 8) {
@@ -490,6 +522,7 @@ let valueInput8 = sessionStorage.getItem('codeEighthLevel');
 
 if (reg8.test(valueInput8)) {
     buttonNext.classList.remove('disabled');
+
 }
 
 let reg9 = /console.log\s*\(\s*key\s*\)/;
@@ -525,7 +558,9 @@ if (counter == 9) {
 }
 
 if (reg9.test(valueInput9)) {
+    window.scrollTo(0, 0);
     buttonNext.classList.remove('disabled');
+     
 }
 
 
@@ -545,8 +580,12 @@ if (counter == 10) {
     switchingTenthLevel();
 }
 if (counter == 10 && reserveEntrance.lectus === 'Tortor, urna hac libero, sed o') {
-    rightEntrance.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        rightEntrance.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 
@@ -562,8 +601,12 @@ if (counter == 11) {
     switchingEleventhLevel();
 }
 if (reserveEntrance.eget === 'Molestie sit nec vulputate habitasse pla' && reserveEntrance.eleifend === 'Sed dapibus quis, sit velit vestibul' && reserveEntrance.justo === 'Integer sapien consectetur sodales int') {
-    scrollEleventhLevelUnder.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        scrollEleventhLevelUnder.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 if (counter == 12) {
@@ -571,8 +614,12 @@ if (counter == 12) {
     switchingTwelfthLevel();
 }
 if (typeof reserveObject === 'object') {
-    reserveRepository.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        reserveRepository.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 var reserveObject = {
@@ -606,8 +653,12 @@ if (counter == 13) {
     switchingThirteenthLevel();
 }
 if (reserveObject.eget === 'Molestie sit nec vulputate habitasse pla' && reserveObject.eleifend === 'Sed dapibus quis, sit velit vestibul' && reserveObject.justo === 'Integer sapien consectetur sodales int') {
-    reserveScrolls.classList.remove('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        reserveScrolls.classList.remove('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
 }
 
 
@@ -671,8 +722,13 @@ if (counter == 15) {
     switchingFifteenthLevel();
 }
 if (secretObject === null || typeof secretObject !== 'object') {
-    leftEntrance.classList.add('hidden');
-    buttonNext.classList.remove('disabled');
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        leftEntrance.classList.add('hidden');
+        buttonNext.classList.remove('disabled');
+    }, timeInterval);
+    
+    
 }
 
 if (counter == 16) {
@@ -690,12 +746,17 @@ if (counter == 16) {
         };
         ${sessionStorage.getItem('codeSixteenthLevel')}`;
     
-    switchingSixteenthLevel();            //
+    switchingSixteenthLevel();            
 }
-if (reserveEntrance === null || typeof reserveEntrance !== 'object') { 
-    rightEntrance.classList.add('hidden');
-    finalAnimation.classList.remove('hidden');
-    drawFinalAnimation();
+if (counter == 16 && (reserveEntrance === null || typeof reserveEntrance !== 'object')) { 
+    window.scrollTo(0, 0);
+    setTimeout(()=>{
+        rightEntrance.classList.add('hidden');
+        finalAnimation.classList.remove('hidden');
+        drawFinalAnimation();
+    }, timeInterval);
+    
+    
   
     setTimeout(() =>{
         repository.classList.add('hidden');
@@ -812,62 +873,77 @@ buttonNext.addEventListener('click', () => {
     if (!buttonNext.classList.contains('disabled') && counter == 1) {
         counter++;
         switchingSecondLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 2) {
         counter++;
         switchingThirdLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 3) {
         counter++;
         switchingFourthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 4) {
         counter++;
         switchingFifthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 5) {
         counter++;
         switchingSixthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 6) {
         counter++;
         switchingSeventhLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 7) {
         counter++;
         switchingEighthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 8) {
         counter++;
         switchingNinthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 9) {
         counter++;
         switchingTenthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 10) {
         counter++;
         switchingEleventhLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 11) {
         counter++;
         switchingTwelfthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 12) {
         counter++;
         switchingThirteenthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 13) {
         counter++;
         switchingFourteenthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 14) {
         counter++;
         switchingFifteenthLevel();
+        window.scrollTo(0, 0);
     }
     if (!buttonNext.classList.contains('disabled') && counter == 15) {
         counter++;
         switchingSixteenthLevel();
+        window.scrollTo(0, 0);
     }  
 });
 
