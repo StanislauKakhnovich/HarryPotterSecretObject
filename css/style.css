@@ -227,6 +227,7 @@ a {
 }
 canvas { 
     position: absolute; 
+    
 }
 
 #layer-harry { 
@@ -479,15 +480,15 @@ label {
     }
 
     #buttons-language {
-        max-width: 450px;
+        max-width: 410px;
     }
     #board {
-        min-width: 450px;
-        min-height: 450px;   
+        min-width: 410px;
+        min-height: 425px;   
     }
     canvas { 
-        width: 450px;
-        height: 450px;
+        width: 410px;
+        height: 410px;
     }
     button {
         font-size: 12px;
@@ -522,4 +523,10 @@ label {
         height: 300px;
     }
     
+}
+
+@media only all and (min-width: 320px) and (max-width: 1015px) {
+    body {
+        overflow-x: hidden;
+    }
 }
