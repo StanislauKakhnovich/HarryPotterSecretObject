@@ -36,4 +36,5 @@ const postCounter = async () => {
 }
 
 buttonNext.addEventListener('click', postCounter);
+buttonNextOver.addEventListener('click', postCounter);
 

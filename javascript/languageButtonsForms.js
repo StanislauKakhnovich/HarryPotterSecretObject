@@ -90,6 +90,11 @@ let buttonsLanguage = [
         'en': `Next`
     },
     {
+        id: '#nextOver',
+        'ru': `Следующий`,
+        'en': `Next`
+    },
+    {
         id: '#reset',
         'ru': `Сбросить уровень`,
         'en': `Reset Level`

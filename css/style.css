@@ -172,6 +172,13 @@ button {
     bottom: 1em;
     padding-top: 0.3em;
 }
+
+#nextOver {
+    margin-top: 5px;
+    display: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 #reset {
     position: absolute;
     background-color: gray;
@@ -187,7 +194,8 @@ button {
     padding-top: 0.3em;
 }
 
-#next.disabled {
+#next.disabled,
+#nextOver.disabled {
     opacity: 0.5;
 }
 .credits {
@@ -455,10 +463,7 @@ label {
     
     #sidebar {
         width: 100%;
-    }
-    
-    
-    
+    }   
 }
 
 @media only screen and (max-width: 650px) {
@@ -468,10 +473,6 @@ label {
     #editor,
     pre {
         font-size: 13px;
-    }
-
-    .header {
-        justify-content: center;
     }
     .title {
         font-size: 18px;
@@ -490,6 +491,21 @@ label {
     }
     button {
         font-size: 12px;
+    }
+    #next {
+        display: none;
+    }
+    #nextOver {
+        display: block;
+    }
+    #level-counter {
+        font-size: 13px;
+    }
+    #level-indicator {
+        width: 120px;
+    }
+    #enter {
+        bottom: 1em;
     }
 }
 
