@@ -83,7 +83,7 @@ let levels = [
                     </p>
                     <p>Harry Potter grew up to work for the Ministry of Magic. He was assigned to create an underground
                         a secret repository in which scrolls with forbidden spells will be stored. Help Harry Potter create
-                        the scroll repository, which will be our object. Declare a <code class="help play">secretObject</code> variable and assign it a reference to an empty object,
+                        the scrolls storage, which will be our object. Declare a <code class="help play">secretObject</code> variable and assign it a reference to an empty object,
                         as shown in one of the examples above. Here and below, <code class="help play">var</code> should be used when declaring variables.
                     </p>
                     <p>
@@ -111,7 +111,7 @@ let levels = [
                                 };
                     </code>
                     </p>
-                    <p> У каждого свойства есть ключ (также называемый «имя» или «идентификатор»). После имени свойства следует двоеточие <code class="help">":"</code>, и затем указывается значение свойства. Если в объекте несколько свойств, то они перечисляются через запятую. В объекте user сейчас находятся два свойства: 
+                    <p> У каждого свойства есть ключ (также называемый «имя» или «идентификатор»). После имени свойства следует двоеточие <code class="help">":"</code>, и затем указывается значение свойства. Если в объекте несколько свойств, то они перечисляются через запятую. В объекте <code class="help">user</code> сейчас находятся два свойства: 
                     </p>
                     <p>
                         Первое свойство с именем "name" и значением "John".
@@ -138,7 +138,7 @@ let levels = [
                     </p>
                     `,
             'en': `
-                    <p>When using the literal syntax {...}, we can immediately put several properties in the object in the form of key: value pairs:
+                    <p>When using the literal notation {...}, we can immediately put several properties in the object in the form of key: value pairs:
                     </p>
                     <p>
                     <code class="help">
@@ -151,7 +151,7 @@ let levels = [
                                 };
                     </code>
                     </p>
-                    <p> Each property has a key (also called a "name" or "identifier"). The property name is followed by a colon <code class="help">":"</code>, followed by the value of the property. If the object has several properties, they are listed separated by commas. The user object now has two properties:
+                    <p> Each property has a key (also called a "name" or "identifier"). The property name is followed by a colon <code class="help">":"</code>, followed by the value of the property. If the object has several properties, they are listed separated by commas. The <code class="help">user</code> object now has two properties:
                     </p>
                     <p>
                         First property with name "name" and value "John".
@@ -264,7 +264,7 @@ let levels = [
             'en': `
                     <p>
                     We can add new scrolls to our repository (object) at any time, delete scrolls or read the contents of any scroll.
-                    To access properties, use the "dot" notation:
+                    To access properties, use the dot notation:
                     </p>
                     <p>
                     <code class="help"> // get object property value:
@@ -359,7 +359,7 @@ let levels = [
             'ru': `
                     <p>
                     Для свойств, имена которых состоят из нескольких слов, доступ к значению «через точку» не работает:
-                    </P>
+                    </p>
                     <p>
                     <code class="help">
                     // это вызовет синтаксическую ошибку
@@ -368,7 +368,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    JavaScript видит, что мы обращаемся к свойству user.likes, а затем идёт непонятное слово birds. В итоге синтаксическая ошибка.
+                    JavaScript видит, что мы обращаемся к свойству user.likes, а затем идёт непонятное слово <code class="help">birds</code>. В итоге синтаксическая ошибка.
                     Точка требует, чтобы ключ был именован по правилам именования переменных. То есть не имел пробелов, не начинался с цифры и не содержал специальные символы, кроме $ и _. Для 
                     таких случаев существует альтернативный способ доступа к свойствам через квадратные скобки. Такой способ сработает с любым именем свойства:
                     </p>
@@ -402,7 +402,7 @@ let levels = [
             'en': `
                     <p>
                     For properties whose names consist of several words, accessing the value "through a dot" does not work:
-                    </P>
+                    </p>
                     <p>
                     <code class="help">
                     // this will cause a syntax error
@@ -411,8 +411,8 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    JavaScript sees that we are accessing the user.likes property, and then comes the incomprehensible word birds. The result is a syntax error.
-                    The dot requires that the key be named according to the rules for naming variables. That is, it did not have spaces, did not start with a number, and did not contain special characters other than $ and _. For
+                    JavaScript sees that we are accessing the user.likes property, and then comes the incomprehensible word <code class="help">birds</code>. The result is a syntax error.
+                    The dot requires that the key be named according to the rules for naming variables. That is, it did not have spaces, did not start with a number, and did not contain special characters other than $ and _.
                     In such cases, there is an alternative way to access properties through square brackets. This will work with any property name:
                     </p>
                     <p>
@@ -436,7 +436,7 @@ let levels = [
                     Now everything is all right. Note that the string in square brackets is enclosed in quotation marks (any type of quotation mark will do).
                     </p>
                     <p>
-                    The Ministry of Magic instructed Harry Potter to remove the scroll titled <code class="help play">"cursus lacinia sed"</code>. Let's help remove this scroll from our <code class="help play">secretObject</code> repository.
+                    The Ministry of Magic instructed Harry Potter to remove the scroll titled <code class="help play">"cursus lacinia sed"</code>. Let's help remove this scroll from our <code class="help play">secretObject</code> storage.
                     </p>
                     <p>
                     After writing the code, click the "Enter code" button.
@@ -452,7 +452,7 @@ let levels = [
             'ru': `
                     <p>
                     Квадратные скобки также позволяют обратиться к свойству, имя которого может быть результатом выражения. Например, имя свойства может храниться в переменной:
-                    </P>
+                    </p>
                     <p>
                     <code class="help">
                     var key = "likes birds";
@@ -463,7 +463,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Здесь переменная key может быть вычислена во время выполнения кода или зависеть от пользовательского ввода. После этого мы используем её для доступа к свойству. Это даёт нам большую гибкость.
+                    Здесь переменная <code class="help">key</code> может быть вычислена во время выполнения кода или зависеть от пользовательского ввода. После этого мы используем её для доступа к свойству. Это даёт нам большую гибкость.
                     Пример:
                     </p>
                     <p>
@@ -513,7 +513,7 @@ let levels = [
             'en': `
             <p>
                     Square brackets also allow you to refer to a property whose name can be the result of an expression. For example, a property name can be stored in a variable:
-                    </P>
+                    </p>
                     <p>
                     <code class="help">
                     var key = "like birds";
@@ -524,7 +524,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Here, the key variable can be evaluated at runtime or depend on user input. After that, we use it to access the property. This gives us a lot of flexibility.
+                    Here, the <code class="help">key</code> variable can be evaluated at runtime or depend on user input. After that, we use it to access the property. This gives us a lot of flexibility.
                     Example:
                     </p>
                     <p>
@@ -719,7 +719,7 @@ let levels = [
                     Обратите внимание, что все конструкции «for» позволяют нам объявлять переменную внутри цикла, как, например, <code class="help">var key</code> здесь.
                     <br>
                     Кроме того, мы могли бы использовать другое имя переменной. Например, часто используется вариант <code class="help">"for (var prop in obj)"</code>.
-                    </P>
+                    </p>
                     <p>
                     Также обратите внимание на выражение  <code class="help">alert(user[key])</code>. Переменная <code class="help">key</code> взята в квадратные скобки, так как это переменная а не конкретное имя свойства. 
                     В данной ситуации запись через точку работать не будет.
@@ -775,7 +775,7 @@ let levels = [
                     Note that all "for" constructs allow us to declare a variable inside the loop, like <code class="help">var key</code> here.
                     <br>
                     Also, we could use a different variable name. For example, <code class="help">"for (var prop in obj)"</code> is often used.
-                    </P>
+                    </p>
                     <p>
                     Also note the expression <code class="help">alert(user[key])</code>. The variable <code class="help">key</code> is enclosed in square brackets because it is a variable and not a specific property name.
                     In this situation, dot notation will not work.
@@ -1029,7 +1029,7 @@ for (var key in secretObject) {`,
                     </p>
                     <p>
                     Помогите Гарри Поттеру скопировать свитки из старого объекта <code class="help play">secretObject</code> в новый объект <code class="help play">reserveObject</code>.
-                    </P>
+                    </p>
                     <p>
                     После написания кода нажмите кнопку "Введите код".
                     </p>
@@ -1079,7 +1079,7 @@ for (var key in secretObject) {`,
                     </p>
                     <p>
                     Help Harry Potter copy the scrolls from the old <code class="help play">secretObject</code> object to the new <code class="help play">reserveObject</code> object.
-                    </P>
+                    </p>
                     <p>
                     After writing the code, click the "Enter code" button.
                     </p>
@@ -1245,12 +1245,12 @@ for (var key in secretObject) {`,
             'en': `
                     <p>
                     As you can see in the image, after we set the secretObject variable to null, the first input disappeared.
-                    The repository itself (our object) has not been erased. This happened because as long as at least one variable refers to the object, it will not be erased.
+                    The storage itself (our object) has not been erased. This happened because as long as at least one variable refers to the object, it will not be erased.
                     In order for an object to be deleted, all variables that refer to it must be assigned null or overwritten with another value.
                     After all references to the object have been erased (overwritten), the "garbage collector" will erase the object from memory.
                     </p>
                     <p>
-                    Set the <code class="help play">reserveEntrance</code> variable to <code class="help play">null</code> and watch what happens to the store.
+                    Set the <code class="help play">reserveEntrance</code> variable to <code class="help play">null</code> and watch what happens to the storage.
                     <p>
                     After writing the code, click the "Enter code" button.
                     </p>
