@@ -79,6 +79,13 @@ let switchingZeroLevel = () => {
     
 }
 
+let containerButtonsNextArrowLeft = () => {
+    containerButtonNextOver.classList.remove('hidden');
+    buttonNext.classList.add('disabled');
+    buttonNextOver.classList.add('disabled');
+    arrowLeft.classList.remove('disabled');
+}
+
 let switchingFirstLevel = () => {
     switchingLevel();
     formSignUp.classList.add('hidden');
@@ -89,10 +96,7 @@ let switchingFirstLevel = () => {
     enteredText.style.height = '48px';
     leftEntrance.classList.add('hidden');
     repository.classList.add('hidden');
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeSecondLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeFirstLevel');
     scrollSecondLevelOver.classList.add('hidden');
@@ -104,19 +108,20 @@ buttonEntry.addEventListener('click', () => {
     switchingFirstLevel();
 });
 
-let switchingSecondLevel = () => {
-    switchingLevel();
+let renderSecretObject = () => {
     leftEntrance.classList.remove('hidden');
     repository.classList.remove('hidden');
+}
+
+let switchingSecondLevel = () => {
+    switchingLevel();
+    renderSecretObject();
     scrollSecondLevelOver.classList.remove('hidden');
     scrollSecondLevelUnder.classList.add('hidden');
     scrollThirdLevelOver.classList.add('hidden');
     scrollThirdLevelUnder.classList.add('hidden');
     enteredText.style.height = '72px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeFirstLevel');
     sessionStorage.removeItem('codeThirdLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeSecondLevel');
@@ -124,17 +129,13 @@ let switchingSecondLevel = () => {
 
 let switchingThirdLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelOver.classList.add('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelOver.classList.remove('hidden');
     scrollThirdLevelUnder.classList.add('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeSecondLevel');
     sessionStorage.removeItem('codeFourthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeThirdLevel');
@@ -142,18 +143,14 @@ let switchingThirdLevel = () => {
 
 let switchingFourthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelOver.classList.add('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelOver.classList.add('hidden');
     scrollFifthLevelUnder.classList.add('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeThirdLevel');
     sessionStorage.removeItem('codeFifthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeFourthLevel');
@@ -161,17 +158,13 @@ let switchingFourthLevel = () => {
 
 let switchingFifthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelOver.classList.remove('hidden');
     scrollFifthLevelUnder.classList.add('hidden');
     enteredText.style.height = '168px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeFourthLevel');
     sessionStorage.removeItem('codeSixthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeFifthLevel');
@@ -179,18 +172,14 @@ let switchingFifthLevel = () => {
 
 let switchingSixthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelOver.classList.add('hidden');
     scrollFifthLevelUnder.classList.remove('hidden');
     scrollSeventhLevelOver.classList.add('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeFifthLevel');
     sessionStorage.removeItem('codeSeventhLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeSixthLevel');
@@ -198,17 +187,13 @@ let switchingSixthLevel = () => {
 
 let switchingSeventhLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.add('hidden');
     scrollFifthLevelUnder.classList.remove('hidden');
     scrollSeventhLevelOver.classList.remove('hidden');
     enteredText.style.height = '72px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeSixthLevel');
     sessionStorage.removeItem('codeEighthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeSeventhLevel');
@@ -216,18 +201,14 @@ let switchingSeventhLevel = () => {
 
 let switchingEighthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelUnder.classList.remove('hidden');
     scrollSeventhLevelOver.classList.add('hidden');
     scrollNinthLevelUnrolled.classList.add('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeSeventhLevel');
     sessionStorage.removeItem('codeNinthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeEighthLevel');
@@ -235,18 +216,14 @@ let switchingEighthLevel = () => {
 
 let switchingNinthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
     scrollFifthLevelUnder.classList.remove('hidden');
     scrollNinthLevelUnrolled.classList.remove('hidden');
     rightEntrance.classList.add('hidden');
     enteredText.style.height = '24px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeEighthLevel');
     sessionStorage.removeItem('codeTenthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeNinthLevel');
@@ -254,8 +231,7 @@ let switchingNinthLevel = () => {
 
 let switchingTenthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     rightEntrance.classList.add('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
@@ -264,10 +240,7 @@ let switchingTenthLevel = () => {
     scrollEleventhLevelOver.classList.add('hidden');
     scrollEleventhLevelUnder.classList.add('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeNinthLevel');
     sessionStorage.removeItem('codeEleventhLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeTenthLevel');
@@ -275,8 +248,7 @@ let switchingTenthLevel = () => {
 
 let switchingEleventhLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     rightEntrance.classList.remove('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
@@ -286,10 +258,7 @@ let switchingEleventhLevel = () => {
     reservePlace.classList.add('hidden');
     reserveRepository.classList.add('hidden');
     enteredText.style.height = '144px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeTenthLevel');
     sessionStorage.removeItem('codeTwelfthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeEleventhLevel');
@@ -297,8 +266,7 @@ let switchingEleventhLevel = () => {
 
 let switchingTwelfthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     rightEntrance.classList.remove('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
@@ -309,10 +277,7 @@ let switchingTwelfthLevel = () => {
     reserveRepository.classList.add('hidden');
     reserveScrolls.classList.add('hidden');
     enteredText.style.height = '24px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeEleventhLevel');
     sessionStorage.removeItem('codeThirteenthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeTwelfthLevel');
@@ -320,8 +285,7 @@ let switchingTwelfthLevel = () => {
 
 let switchingThirteenthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     rightEntrance.classList.remove('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
@@ -332,10 +296,7 @@ let switchingThirteenthLevel = () => {
     reserveRepository.classList.remove('hidden');
     reserveScrolls.classList.add('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeTwelfthLevel');
     sessionStorage.removeItem('codeFourteenthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeThirteenthLevel');
@@ -343,8 +304,7 @@ let switchingThirteenthLevel = () => {
 
 let switchingFourteenthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     rightEntrance.classList.remove('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
@@ -355,10 +315,7 @@ let switchingFourteenthLevel = () => {
     reserveRepository.classList.remove('hidden');
     reserveScrolls.classList.remove('hidden');
     enteredText.style.height = '48px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     sessionStorage.removeItem('codeThirteenthLevel');
     sessionStorage.removeItem('codeFifteenthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeFourteenthLevel');
@@ -366,8 +323,7 @@ let switchingFourteenthLevel = () => {
 
 let switchingFifteenthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
-    repository.classList.remove('hidden');
+    renderSecretObject();
     rightEntrance.classList.remove('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
     scrollThirdLevelUnder.classList.remove('hidden');
@@ -378,10 +334,7 @@ let switchingFifteenthLevel = () => {
     reserveRepository.classList.add('hidden');
     reserveScrolls.classList.add('hidden');
     enteredText.style.height = '24px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     arrowRight.classList.remove('disabled');
     sessionStorage.removeItem('codeFourteenthLevel');
     sessionStorage.removeItem('codeSixteenthLevel');
@@ -390,7 +343,6 @@ let switchingFifteenthLevel = () => {
 
 let switchingSixteenthLevel = () => {
     switchingLevel();
-    leftEntrance.classList.remove('hidden');
     repository.classList.remove('hidden');
     rightEntrance.classList.remove('hidden');
     scrollSecondLevelUnder.classList.remove('hidden');
@@ -403,10 +355,7 @@ let switchingSixteenthLevel = () => {
     reserveScrolls.classList.add('hidden');
     leftEntrance.classList.add('hidden');
     enteredText.style.height = '24px';
-    containerButtonNextOver.classList.remove('hidden');
-    buttonNext.classList.add('disabled');
-    buttonNextOver.classList.add('disabled');
-    arrowLeft.classList.remove('disabled');
+    containerButtonsNextArrowLeft();
     arrowRight.classList.add('disabled');
     sessionStorage.removeItem('codeFifteenthLevel');
     enteredText.innerHTML = sessionStorage.getItem('codeSixteenthLevel');
@@ -422,9 +371,6 @@ if (counter == 1) {
     controlCode.innerHTML = sessionStorage.getItem('codeFirstLevel');
     switchingFirstLevel();
 }
-//document.documentElement.clientWidth
-//window.scrollTo(0, 0);
-
 
 if (typeof secretObject === 'object' && counter == 1) {
     scrollUp();
@@ -452,7 +398,6 @@ var secretObject = {
 };
 
 var reserveEntrance;
-// && sessionStorage.getItem('codeSecondLevel') != ''
 
 if (counter == 2) {
     controlCode.innerHTML = `secretObject = {${sessionStorage.getItem('codeSecondLevel')}}`;

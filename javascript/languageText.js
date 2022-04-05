@@ -37,7 +37,10 @@ let levels = [
     {
         name: `level 1`,
         instructions: { 
-            'ru': `
+            'ru': `<p>
+                     Объект — это неупорядоченный набор свойств, где каждое свойство состоит из имени и значения, ассоциированного с этим именем.
+                     Объекты используются для хранения коллекций различных значений и более сложных сущностей.
+                    </p>
                     <p>Объект может быть создан с помощью фигурных скобок {…} с необязательным списком свойств. 
                         Свойство – это пара «ключ: значение», где ключ – это строка (также называемая «именем свойства»), 
                         а значение может быть чем угодно.
@@ -61,6 +64,10 @@ let levels = [
                     </p>
                     `,
             'en': `
+                    <p>
+                     An object is an unordered set of properties, where each property consists of a name and a value associated with that name.
+                     Objects are used to store collections of different values and more complex entities.
+                    </p>
                     <p>An object can be created using curly braces {…} with an optional list of properties.
                         A property is a key:value pair, where the key is a string (also called a "property name"),
                         and the value can be anything.
