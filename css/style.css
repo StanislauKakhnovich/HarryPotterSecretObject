@@ -11,7 +11,7 @@ body {
     display: flex;
     min-width: 600px;
     margin: 0;
-    background-color: purple;
+    background-color: #CC5801;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'PT Sans', sans-serif;
 }
@@ -23,6 +23,7 @@ body {
     padding: 2em;
     font-size: 15px;
 }
+
 .header {
     display: flex;
     flex-wrap: wrap;

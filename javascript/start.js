@@ -20,19 +20,20 @@ if (sessionStorage.getItem('languageRender') == null){
 
 let bottomEn = document.querySelector('#en');
 let bottomRu = document.querySelector('#ru');
-
-bottomEn.addEventListener('click', () => {
-    languageRender = 'en';
+let renderText = () => {
     sessionStorage.setItem('languageRender', languageRender);
     sessionStorage.setItem('counter', counter);
     location.reload(); 
+}
+
+bottomEn.addEventListener('click', () => {
+    languageRender = 'en';
+    renderText();
 })
 
 bottomRu.addEventListener('click', () => {
     languageRender = 'ru';
-    sessionStorage.setItem('languageRender', languageRender);
-    sessionStorage.setItem('counter', counter);
-    location.reload(); 
+    renderText();
 })
 
 languageRender = sessionStorage.getItem('languageRender');
@@ -40,7 +41,6 @@ languageRender = sessionStorage.getItem('languageRender');
 let switchingLanguageButton = () =>{
     buttonsLanguage.forEach((elem) =>{
         document.querySelector(elem['id']).innerText = elem[languageRender];
-
     })
 }
 
@@ -60,8 +60,8 @@ let buttonSignIn = document.querySelector('#btn-sign-in');
 let formSignIn = document.querySelector('.form-sign-in');
 
 buttonSignIn.addEventListener('click', () => {
-    formSignIn.classList.remove('hidden');
     formSignUp.classList.add('hidden');
+    formSignIn.classList.remove('hidden');
 });
 
 

@@ -32,7 +32,7 @@ const postForm = async () => {
         userId = data.id;
         sessionStorage.setItem('userId', userId);
         counter = 1;
-        switchingFirstLevel();
+        switchingLevelUniversal(counter);
         
     } catch (e) {
         console.log(e);
