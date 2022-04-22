@@ -128,9 +128,9 @@ let levels = [
                     <p>
                     Из Министерства магии Гарри Поттеру прислали первых два свитка с запрещенными заклинаниями. 
                     <p>
-                    Первый свиток называется: <code class="help play">lectus</code> и содержит текст: <code class="help play">'Tortor, urna hac libero, sed o'</code>. 
+                    Первый свиток называется: <code class="help play">lectus</code> и содержит текст: <code class="help play">'Tortor, urna'</code>. 
                     <br>
-                    Второй свиток называется: <code class="help play">amet</code> и содержит текст: <code class="help play">'Ipsum sed vitae consectetur du'</code>.
+                    Второй свиток называется: <code class="help play">amet</code> и содержит текст: <code class="help play">'Ipsum sed'</code>.
                     <p>
                     Помогите Гарри Поттеру переписать эти два свитка в новые свитки в подземном хранилище (наименование свитков будет являться именем свойств, текст - значением имен). 
                     <p>
@@ -168,9 +168,9 @@ let levels = [
                     <p>
                     From the Ministry of Magic, Harry Potter was sent the first two scrolls with forbidden spells.
                     <p>
-                    The first scroll is called: <code class="help play">lectus</code> and contains the text: <code class="help play">'Tortor, urna hac libero, sed o'</code>.
+                    The first scroll is called: <code class="help play">lectus</code> and contains the text: <code class="help play">'Tortor, urna'</code>.
                     <br>
-                    The second scroll is called: <code class="help play">amet</code> and contains the text: <code class="help play">'Ipsum sed vitae consectetur du'</code>.
+                    The second scroll is called: <code class="help play">amet</code> and contains the text: <code class="help play">'Ipsum sed'</code>.
                     <p>
                     Help Harry Potter rewrite these two scrolls into new scrolls in the underground repository (the name of the scrolls will be the name of the properties, the text will be the meaning of the names).
                     <p>
@@ -203,7 +203,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Гарри Поттеру прислали свиток с названием состоящим из трех слов: <code class="help play">"cursus lacinia sed"</code>. Вот содержание этого свитка: <code class="help play">'Leo, dui habitasse velit in am'</code>.
+                    Гарри Поттеру прислали свиток с названием состоящим из трех слов: <code class="help play">"cursus lacinia sed"</code>. Вот содержание этого свитка: <code class="help play">'Leo, dui'</code>.
                     Помогите ему переписать этот свиток в хранилище. 
                     <p>
                     После написания кода нажмите кнопку "Введите код".
@@ -227,7 +227,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Harry Potter was sent a scroll with a three-word title: <code class="help play">"cursus lacinia sed"</code>. Here is the contents of this scroll: <code class="help play">'Leo, dui habitasse velit in am'</code>.
+                    Harry Potter was sent a scroll with a three-word title: <code class="help play">"cursus lacinia sed"</code>. Here is the contents of this scroll: <code class="help play">'Leo, dui'</code>.
                     Help him rewrite this scroll in the repository.
                     <p>
                     After writing the code, click the "Enter code" button.
@@ -236,8 +236,8 @@ let levels = [
         },
         before: 
 `secretObject = {
-    lectus: 'Tortor, urna hac libero, sed o',
-    amet: 'Ipsum sed vitae consectetur du',`,
+    lectus: 'Tortor, urna',
+    amet: 'Ipsum sed',`,
         after: `}`
     },
     {
@@ -251,7 +251,7 @@ let levels = [
                     <p>
                     <code class="help"> // получаем значение свойства объекта:
                     <br>
-                    alert(secretObject.lectus); // 'Tortor, urna hac libero, sed o'
+                    alert(secretObject.lectus); // 'Tortor, urna'
                     </code>
                     </p>
                     <p>
@@ -269,7 +269,7 @@ let levels = [
                     <p>
                     <code class="help"> // get object property value:
                     <br>
-                    alert(secretObject.lectus); // 'Tortor, urna hac libero, sed o'
+                    alert(secretObject.lectus); // 'Tortor, urna'
                     </code>
                     </p>
                     <p>
@@ -282,9 +282,9 @@ let levels = [
             },
             before:
 `secretObject = {
-    lectus: 'Tortor, urna hac libero, sed o',
-    amet: 'Ipsum sed vitae consectetur du',
-    "cursus lacinia sed": 'Leo, dui habitasse velit in am'
+    lectus: 'Tortor, urna',
+    amet: 'Ipsum sed',
+    "cursus lacinia sed": 'Leo, dui'
 }`,
             after: ``
     },
@@ -307,11 +307,11 @@ let levels = [
                     Министерство Магии прислало еще три свитка.
                     </p>
                     <p>
-                    Первый свиток называется: <code class="help play">consectetur</code> и содержит текст: <code class="help play">'Accumsan et. Sed non sed orci, nisi sed'</code>.
+                    Первый свиток называется: <code class="help play">consectetur</code> и содержит текст: <code class="help play">'Accumsan et'</code>.
                     <br>
-                    Второй свиток называется: <code class="help play">arcu</code> и содержит текст: <code class="help play">'Mattis id dictum. Justo nulla fauci'</code>.
+                    Второй свиток называется: <code class="help play">arcu</code> и содержит текст: <code class="help play">'Mattis id'</code>.
                     <br>
-                    Третий свиток называется: <code class="help play">augue</code> и содержит текст: <code class="help play">'Ut. Est. Dapibus in sed morbi tortor, vita'</code>.
+                    Третий свиток называется: <code class="help play">augue</code> и содержит текст: <code class="help play">'Ut. Est'</code>.
                     </p>
                     <p>
                     Помогите Гарри Поттеру перезаписать эти свитки в хранилище используя запись через точку.
@@ -336,11 +336,11 @@ let levels = [
                     The Ministry of Magic sent three more scrolls.
                     </p>
                     <p>
-                    The first scroll is called: <code class="help play">consectetur</code> and contains the text: <code class="help play">'Accumsan et. Sed non sed orci, nisi sed'</code>.
+                    The first scroll is called: <code class="help play">consectetur</code> and contains the text: <code class="help play">'Accumsan et'</code>.
                     <br>
-                    The second scroll is called: <code class="help play">arcu</code> and contains the text: <code class="help play">'Mattis id dictum. Justo nulla fauci'</code>.
+                    The second scroll is called: <code class="help play">arcu</code> and contains the text: <code class="help play">'Mattis id'</code>.
                     <br>
-                    The third scroll is called: <code class="help play">augue</code> and contains the text: <code class="help play">'Ut. Est. Dapibus in sed morbi tortor, vita'</code>.
+                    The third scroll is called: <code class="help play">augue</code> and contains the text: <code class="help play">'Ut. Est'</code>.
                     </p>
                     <p>
                     Help Harry Potter overwrite these scrolls in the repository using dot notation.
@@ -502,7 +502,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    Министерство магии прислало свиток без названия с текстом: <code class="help play">'Dictum morbi et. Aenean aenean sed vi'</code>.
+                    Министерство магии прислало свиток без названия с текстом: <code class="help play">'Dictum morbi'</code>.
                     Название свитка пришло отдельно в виде значения переменной <code class="help play">nameScroll</code>. Перезапишите свиток в наш объект <code class="help play">secretObject</code>
                     используя квадратные скобки и переменную <code class="help play">nameScroll</code>.
                     </p>
@@ -563,7 +563,7 @@ let levels = [
                     </code>
                     </p>
                     <p>
-                    The Ministry of Magic sent an untitled scroll with the text: <code class="help play">'Dictum morbi et. Aenean aenean sed vi'</code>.
+                    The Ministry of Magic sent an untitled scroll with the text: <code class="help play">'Dictum morbi'</code>.
                     The name of the scroll came separately as the value of the <code class="help play">nameScroll</code> variable. Overwrite the scroll in our object <code class="help play">secretObject</code>
                     using square brackets and <code class="help play">nameScroll</code> variable.
                     </p>
@@ -909,11 +909,11 @@ for (var key in secretObject) {`,
                     Из Министерства магии прислали еще три свитка.
                     </p>
                     <p>
-                    Первый свиток называется: <code class="help play">eget</code> и содержит текст: <code class="help play">'Molestie sit nec vulputate habitasse pla'</code>.
+                    Первый свиток называется: <code class="help play">eget</code> и содержит текст: <code class="help play">'Molestie sit'</code>.
                     <br>
-                    Второй свиток называется: <code class="help play">eleifend</code> и содержит текст: <code class="help play">'Sed dapibus quis, sit velit vestibul'</code>.
+                    Второй свиток называется: <code class="help play">eleifend</code> и содержит текст: <code class="help play">'Sed dapibus'</code>.
                     <br>
-                    Третий свиток называется: <code class="help play">justo</code> и содержит текст: <code class="help play">'Integer sapien consectetur sodales int'</code>.
+                    Третий свиток называется: <code class="help play">justo</code> и содержит текст: <code class="help play">'Integer sapien'</code>.
                     </p>
                     <p>
                     Помогите Гарри Поттеру перезаписать эти свитки в хранилище используя второй вход <code class="help play">reserveEntrance</code>.
@@ -931,11 +931,11 @@ for (var key in secretObject) {`,
                     Three more scrolls have been sent from the Ministry of Magic.
                     </p>
                     <p>
-                    The first scroll is called: <code class="help play">eget</code> and contains the text: <code class="help play">'Molestie sit nec vulputate habitasse pla'</code>.
+                    The first scroll is called: <code class="help play">eget</code> and contains the text: <code class="help play">'Molestie sit'</code>.
                     <br>
-                    The second scroll is called: <code class="help play">eleifend</code> and contains the text: <code class="help play">'Sed dapibus quis, sit velit vestibul'</code>.
+                    The second scroll is called: <code class="help play">eleifend</code> and contains the text: <code class="help play">'Sed dapibus'</code>.
                     <br>
-                    The third scroll is called: <code class="help play">justo</code> and contains the text: <code class="help play">'Integer sapien consectetur sodales int'</code>.
+                    The third scroll is called: <code class="help play">justo</code> and contains the text: <code class="help play">'Integer sapien'</code>.
                     </p>
                     <p>
                     Help Harry Potter overwrite these scrolls in repository using the second entry <code class="help play">reserveEntrance</code>.

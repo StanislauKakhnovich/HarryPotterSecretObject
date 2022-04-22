@@ -233,7 +233,7 @@ if (counter == 2) {
     switchingLevelUniversal(counter);
 }
 
-if (secretObject.lectus === 'Tortor, urna hac libero, sed o' && secretObject.amet === 'Ipsum sed vitae consectetur du'&& counter == 2) {
+if (secretObject.lectus === 'Tortor, urna' && secretObject.amet === 'Ipsum sed'&& counter == 2) {
     scrollUp();
     setTimeout(()=>{
         scrollSecondLevelUnder.classList.remove('hidden');
@@ -242,18 +242,18 @@ if (secretObject.lectus === 'Tortor, urna hac libero, sed o' && secretObject.ame
 }
 
 if (counter == 3) {
-    controlCode.innerHTML = `secretObject = {lectus: 'Tortor, urna hac libero, sed o',
-    amet: 'Ipsum sed vitae consectetur du', ${sessionStorage.getItem(`code${counter}Level`)}}`;
+    controlCode.innerHTML = `secretObject = {lectus: 'Tortor, urna',
+    amet: 'Ipsum sed', ${sessionStorage.getItem(`code${counter}Level`)}}`;
     switchingLevelUniversal(counter);
 }
-if (secretObject["cursus lacinia sed"] === 'Leo, dui habitasse velit in am' && counter == 3) {
+if (secretObject["cursus lacinia sed"] === 'Leo, dui' && counter == 3) {
     scrollUp();
     setTimeout(()=>{
         scrollThirdLevelUnder.classList.remove('hidden');
         activateButtonsNext();
     }, timeInterval);   
 }
-let codeUser_3 = `secretObject = {lectus: 'Tortor, urna hac libero, sed o', amet: 'Ipsum sed vitae consectetur du', "cursus lacinia sed": 'Leo, dui habitasse velit in am'};`
+let codeUser_3 = `secretObject = {lectus: 'Tortor, urna', amet: 'Ipsum sed', "cursus lacinia sed": 'Leo, dui'};`
 
 if (counter == 4) {
     setTimeout(()=>{
@@ -273,14 +273,14 @@ if (counter == 5) {
     controlCode.innerHTML = `${codeUser_3} ${sessionStorage.getItem(`code${counter}Level`)}`;     
     switchingLevelUniversal(counter);
 }
-if (secretObject.consectetur === 'Accumsan et. Sed non sed orci, nisi sed' && secretObject.arcu === 'Mattis id dictum. Justo nulla fauci' && secretObject.augue === 'Ut. Est. Dapibus in sed morbi tortor, vita' && counter == 5) {
+if (secretObject.consectetur === 'Accumsan et' && secretObject.arcu === 'Mattis id' && secretObject.augue === 'Ut. Est' && counter == 5) {
     scrollUp();
     setTimeout(()=>{
         scrollFifthLevelUnder.classList.remove('hidden');
         activateButtonsNext();
     }, timeInterval);  
 }
-let codeUser_5 = `secretObject.consectetur =  'Accumsan et. Sed non sed orci, nisi sed'; secretObject.arcu =  'Mattis id dictum. Justo nulla fauci'; secretObject.augue =  'Ut. Est. Dapibus in sed morbi tortor, vita';`
+let codeUser_5 = `secretObject.consectetur =  'Accumsan et'; secretObject.arcu =  'Mattis id'; secretObject.augue =  'Ut. Est';`
 
 if (counter == 6) {
     controlCode.innerHTML = `${codeUser_3} ${codeUser_5} ${sessionStorage.getItem(`code${counter}Level`)}`;
@@ -299,14 +299,14 @@ if (counter == 7) {
     controlCode.innerHTML = `${codeUser_3} ${codeUser_5} ${codeUser_6} ${sessionStorage.getItem(`code${counter}Level`)}`;
     switchingLevelUniversal(counter);
 }
-if (secretObject.ornare === 'Dictum morbi et. Aenean aenean sed vi' && counter == 7) {
+if (secretObject.ornare === 'Dictum morbi' && counter == 7) {
     scrollUp();
     setTimeout(()=>{
         scrollThirdLevelUnder.classList.remove('hidden');
         activateButtonsNext();
     }, timeInterval);
 }
-let codeUser_7 = `secretObject[nameScroll] = 'Dictum morbi et. Aenean aenean sed vi';`;
+let codeUser_7 = `secretObject[nameScroll] = 'Dictum morbi';`;
 
 if (counter == 8) {
     setTimeout(()=>{
@@ -355,7 +355,7 @@ if (counter == 10) {
         controlCode.innerHTML = `${codeUser_3} ${codeUser_5} ${codeUser_6} ${codeUser_7} ${sessionStorage.getItem(`code${counter}Level`)}`;
         switchingLevelUniversal(counter);
 }
-if (counter == 10 && reserveEntrance.lectus === 'Tortor, urna hac libero, sed o') {
+if (counter == 10 && reserveEntrance.lectus === 'Tortor, urna') {
     scrollUp();
     setTimeout(()=>{
         rightEntrance.classList.remove('hidden');
@@ -368,14 +368,14 @@ if (counter == 11) {
     controlCode.innerHTML = `${codeUser_3} ${codeUser_5} ${codeUser_6} ${codeUser_7} ${codeUser_10} ${sessionStorage.getItem(`code${counter}Level`)}`;
     switchingLevelUniversal(counter);
 }
-if (counter == 11 && reserveEntrance.eget === 'Molestie sit nec vulputate habitasse pla' && reserveEntrance.eleifend === 'Sed dapibus quis, sit velit vestibul' && reserveEntrance.justo === 'Integer sapien consectetur sodales int') {
+if (counter == 11 && reserveEntrance.eget === 'Molestie sit' && reserveEntrance.eleifend === 'Sed dapibus' && reserveEntrance.justo === 'Integer sapien') {
     scrollUp();
     setTimeout(()=>{
         scrollEleventhLevelUnder.classList.remove('hidden');
         activateButtonsNext();
     }, timeInterval); 
 }
-let codeUser_11 = `reserveEntrance.eget = 'Molestie sit nec vulputate habitasse pla'; reserveEntrance.eleifend = 'Sed dapibus quis, sit velit vestibul'; reserveEntrance.justo = 'Integer sapien consectetur sodales int';`
+let codeUser_11 = `reserveEntrance.eget = 'Molestie sit'; reserveEntrance.eleifend = 'Sed dapibus'; reserveEntrance.justo = 'Integer sapien';`
 
 if (counter == 12) {
     controlCode.innerHTML = sessionStorage.getItem(`code${counter}Level`);
@@ -410,7 +410,7 @@ if (counter == 13) {
     `;
     switchingLevelUniversal(counter);
 }
-if (counter == 13 && reserveObject.eget === 'Molestie sit nec vulputate habitasse pla' && reserveObject.eleifend === 'Sed dapibus quis, sit velit vestibul' && reserveObject.justo === 'Integer sapien consectetur sodales int') {
+if (counter == 13 && reserveObject.eget === 'Molestie sit' && reserveObject.eleifend === 'Sed dapibus' && reserveObject.justo === 'Integer sapien') {
     scrollUp();
     setTimeout(()=>{
         reserveScrolls.classList.remove('hidden');
