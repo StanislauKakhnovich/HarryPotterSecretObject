@@ -295,7 +295,7 @@ label {
 }
 .error {
     display: none;
-    color: red;
+    color: white;
 }
 
 #submit,
